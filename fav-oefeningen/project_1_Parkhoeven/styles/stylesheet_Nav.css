@@ -1,0 +1,105 @@
+/*
+    Auteur:  Pepijn Emmers
+    Aanmaakdatum:  20-10-2020
+
+    stylesheet navigatie balk
+*/
+
+/* achtergrond kleur van body */ 
+body
+{
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+/* logo boven navigatie op juiste plaats zetten */ 
+#logo_nav
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+}
+
+/* header positioneren, lettertype en achtergrondkleur aanpassen */
+header
+{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    margin: 0px 0px;
+    font-family: sans-serif;
+	font-weight: 800;
+    font-size: 18px;
+    background-color: #088000;
+}
+
+/* navigatie balk, kleur instellen, postitie, breedte en hoogte aanpassen en tekst in hoofdletters zetten */
+nav
+{
+    background-color: #008000;
+    position: sticky;
+    width: 100%;
+    height: 65px;
+}
+
+/* opsommingstekens weghalen */
+nav ul
+{
+    list-style: none;
+}
+
+/* navigatie tekst achter elkaar met ruimte zetten */
+nav li
+{
+    float: left;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+/* tekst kleur en underline weghalen */
+nav ul a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* bij muis over <a>, kleur veranderen en border tonen */
+nav a:hover
+{
+    color: #ffff00;
+    transition: 250ms;
+    border-top: 5px solid #ffff00;
+    transition: all ease-in-out 250ms;
+}
+
+/* navigatie koppen opschuiven */
+nav ul
+{
+    margin-left: 60px;
+}
+
+/* deze div zorgt de tekst en linker image goed naast elkaar staan*/
+#divLeft
+{
+    margin-top: 65px;
+    height: auto;
+    float: left;
+}
+
+/* tekstvak op de juiste plek zetten */
+.content
+{
+    margin-top: 115px;
+    margin-left: 150px;
+    height: auto;
+    width: 90%;
+}
+
+/* maakt de actieve pagina kop geel */
+.active
+{
+    color: #ffff00;
+}
+

@@ -1,0 +1,25 @@
+/*
+    Auteur:  Pepijn Emmers, Thomas Brood
+    Aanmaakdatum:  30-10-2020
+
+    stylesheet trainingen
+*/
+/* backgroundimage invoegen */
+#backgroundImage
+{
+    background-image: url(../images/tennisbackground.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: left;
+}
+/* zorgen dat tekst beter zichtbaar is */
+#backgroundColorOverlay
+{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* a element zwarte tekstkleur geven */
+a
+{
+    color: black;
+}

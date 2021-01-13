@@ -1,0 +1,111 @@
+<!doctype html>
+<!--
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 14-12-2020
+
+    Curriculum Vitae pagina portfolio
+-->
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Pepijn Emmers - Curriculum Vitae
+        </title>
+        <!-- browser icon toevoegen ------------------------------------------->
+        <link rel="icon" href="images/icon.png">
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="styles/cv.css">
+        <!-- extern JavaScript koppelen -->
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header onscroll="stickyHeader()" id="header">
+            <!-- Navigatie balk --> 
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" id="brandName">Pepijn Emmers</a>
+                <!-- hamburger button -->
+                <div onclick="burgerMenu()" id="burgerButton">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+                <div class="navbarLinks" id="burgerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="opleidingen.html" >Opleidingen</a></li>
+                        <li><a href="werkervaring.html">Werkervaring</a></li>
+                        <li><a href="hobby's-en-bijzondere-kwaliteiten.html">Hobby's &amp; Bijzondere kwaliteiten</a></li>
+                        <li><a href="resultaten.html">Resultaten</a></li>
+                        <li><a href="curriculum-vitae.html" class="active">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h1>Curriculum vitae</h1>
+                <h2>Bekijk of download mijn Curriculum Vitae</h2>
+                <p>Als je meer gegevens wilt of vragen hebt, neem dan <a href="contact.html">contact</a> met mij op.</p>
+                <div id="downloads">
+                    <a href="download-documents/Curriculum%20Vitae%20-%20Pepijn%20Emmers.pdf" download id="downloadCv">Download Curriculum Vitae</a>
+                    <a href="download-documents/English%20Curriculum%20Vitae%20-%20Pepijn%20Emmers.pdf" download id="englishCv">English version</a>
+                </div>
+            </div>
+            <div>
+                <img src="download-documents/Curriculum%20Vitae.jpg" alt="Curriculum Vitae"> 
+                <figcaption>Download de cv voor de beste kwaliteit!</figcaption>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footerDesktop">
+            <p>
+                &copy;Pepijn Emmers 
+            </p>
+            <div class="backToTop">
+                <i class="demo-icon" onclick="backToTop()" title="back to top">&#xe4a3;</i>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+        </footer>
+        
+        <footer id="footerMobile">
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+            </div>
+            <div id="contactFooter">
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+            <p onclick="backToTop()" title="back to top">
+                &copy;Pepijn Emmers
+            </p>
+        </footer>
+    </body>
+</html>

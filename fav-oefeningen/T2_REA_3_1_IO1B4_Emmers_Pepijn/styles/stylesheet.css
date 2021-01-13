@@ -1,0 +1,59 @@
+/*
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 10-12-2020
+
+    Realiseren 3.1
+*/
+/* --- body stylen --- */
+body
+{
+    background-color: lightblue;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* --- content style --- */
+img
+{
+    border: 8px dashed blue;
+    height: 400px;
+}
+h1, p
+{
+    font-size: 30px;
+    color: #242424;
+    font-weight: bold;
+}
+
+/* --- content toevoegen aan p --- */
+p::after
+{
+    content: "De nieuwste smartphone!"
+}
+/* --- style geven tussen 600px en 900px --- */
+@media screen and (min-width: 600px) and (max-width: 900px)
+{
+    body
+    {
+        background-color: orange;
+        transition: all .3s ease;
+    }
+    p::after
+    {
+        content: "De tablet die bij je past!"
+    }
+}
+
+/* --- style geven vanaf 900px --- */
+@media screen and (min-width: 900px)
+{
+    body
+    {
+        background-color: purple;
+        transition: all .3s ease;
+    }
+    p::after
+    {
+        content: "Een laptop om van te dromen!"
+    }
+}

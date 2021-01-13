@@ -1,0 +1,99 @@
+<!doctype html>
+<!--
+    Auteur:  Pepijn Emmers
+    Aanmaakdatum:  20-10-2020
+
+    startpagina (homepage)
+-->
+
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Startpagina
+        </title>
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="vieuwport" content="width=device-width, initial-scale=1.0">
+        <!-- icon invoegen titel balk -->
+        <link rel="icon" href="../images/parkhoeven%20icon.png">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="../styles/stylesheet_Nav.css">
+        <link rel="stylesheet" href="../styles/stylesheet.css">
+        <!-- extern JavaScript koppelen -->
+        <script src="../scripts/scriptHomepage.js" defer></script>
+    </head>
+    <body>
+        <!-- navigatie balk invoegen -->
+        <a href="index.html"><img src="../images/logo%20parkhoeven.png" id="logo_nav"></a>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="mijnParkHoeven.html">Mijn Park Hoeven</a></li>
+                    <li><a href="trainingen.html">Trainingen</a></li>
+                    <li><a href="padelEnSquash.html">Padel en squash</a></li>
+                    <li><a href="overParkHoeven.html">Over Park Hoeven</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <!-- Tekst invoegen -->
+        <div class="content">
+            <h1>
+                <span id="daytime"></span> <span id="greet"></span>,
+            </h1>
+            <p>
+                Welkom op Park Hoeven, <br>
+                Park Hoeven is een tennisvereniging in Uden. De tennisvereniging Park Hoeven bestaat sinds 1979 en begon met 9 tennisbanen en is inmiddels uitgebreid met  squash- en padelbanen. Tennisvereniging Park Hoeven heeft op dit moment 9 kunstgras tennisbanen, 4 indoor squashbanen en 2 padelbanen. Ook is er een horeca zaak aanwezig die 7 dagen per week geopend is.
+            </p>
+            <p>
+                U kunt u inschrijven voor trainingen voor tennis, squash en padel. Ook zijn er regelmatig toernooien en zijn er clubkampioenschappen. Competitie spelen is ook mogelijk.
+            </p>
+            <p>
+                Meer weten over tennis en squash verenging Park Hoeven? Neem <a href="overParkHoeven.html#contact">contact</a> op met een van onze bestuursleden of lees verder op onze website.
+            </p>
+        </div>
+        <br>
+        <!-- afbeelding "tennis" invoegen met overlay text --> 
+        <div class="textOverlay">
+            <a href="trainingen.html">
+                <img src="../images/tennisbaan.jpg" alt="tennis.jpg">
+            <h2 class="overlay-title">
+                Tennis<br>
+                <span class="subTitle"> 9 kunstgras banen</span>
+            </h2>
+            </a>
+        </div>
+        <!-- afbeelding "padel" invoegen met overlay text --> 
+        <div class="textOverlay">
+            <a href="padelEnSquash.html">
+                <img src="../images/padel.jpg" alt="padel.jpg">
+            <h2 class="overlay-title">
+                Padel<br>
+                <span class="subTitle">2 padelbanen</span>
+            </h2>
+            </a>
+        </div>
+        <!-- afbeelding "squash" invoegen met overlay text --> 
+        <div class="textOverlay">
+            <a href="padelEnSquash.html">
+                <img src="../images/squash.jpg" alt="squash.jpg">
+            <h2 class="overlay-title">
+                Squash<br>
+                <span class="subTitle">4 indoor squashbanen</span>
+            </h2>
+            </a>
+        </div>
+        <!-- afbeelding "kantine" invoegen met overlay text --> 
+        <div class="textOverlay">
+            <a href="overParkHoeven.html">
+                <img src="../images/kantine.jpg" alt="kantine.jpg">
+            <h2 class="overlay-title">
+                Horeca<br>
+                <span class="subTitle">7 dagen per week geopend</span>
+            </h2>
+            </a>
+        </div>    
+    </body>
+</html>
