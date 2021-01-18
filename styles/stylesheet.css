@@ -34,6 +34,7 @@
     font-weight: normal;
     font-size: 120%;
 } 
+
 /* ---- STYLE GEVEN AAN DE BODY ---- */
 body
 {
@@ -51,27 +52,25 @@ body
     background-size: cover; 
     min-height: 100vh;
 }
+
 /* ---- fade in animatie van main ---- */
 @keyframes fadein 
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Firefox */
 @-moz-keyframes fadein 
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Safari, Chrome and Opera */
 @-webkit-keyframes fadein 
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Internet Explorer */
 @-ms-keyframes fadein 
 {
@@ -86,6 +85,7 @@ main
     animation: fadein 1.5s;
     padding: 20px;
 }
+
 /* ---- HEADER STYLEN ---- */
 header
 {
@@ -118,6 +118,7 @@ header
     color: #ffbe0d;
     border: 1px solid #ffbe0d;
 }
+
 /* ---- navigatie menu style ----*/
 .navbarLinks, #burgerMenu
 {
@@ -141,11 +142,11 @@ header
     color: #fff;
     font-size: 18px;
 }
-/* ---- hamburger button navigation ---- */
 #burgerButton
 {
     display: none;
 }
+
 /* ---- font-family's en font-size's instellen ---- */
 h1
 {
@@ -314,7 +315,6 @@ footer .contactButton
         font-size: 1.5em; /* tenopzichte van eerder gegeven grootte */
         margin: 15px;
     }
-    
     /* ----- HAMBURGER BUTTON ----- */
     #burgerButton
     {
@@ -340,20 +340,19 @@ footer .contactButton
     /* lijnen onder elkaar zetten */
     #line1
     {
-        transform: translateY(-6px); /* line1 6px omhoog */
+        transform: translateY(-6px);
     }
     #line3
     {
-        transform: translateY(6px); /* line3 6px omlaag */
+        transform: translateY(6px);
     }
-    
-    /* ------ NAVIGATION ------ */
+    /* ---- navigatie ---- */
     #burgerMenu
     {
-        display: none; /* zorgen dat die niet zichtbaar is tenzij word aangegeven */
+        display: none;
         width: 100%;
     }
-    .navbarLinks /* div om ul */
+    .navbarLinks
     {
         width: 100%;
         background-color: #242424;
@@ -363,7 +362,7 @@ footer .contactButton
     {
         background-color: #242424;
         width: 100%;
-        flex-direction: column; /* onder elkaar zetten */
+        flex-direction: column;
         box-shadow: 10px 10px 10px rgba(16, 16, 16, 0.5);
         animation: fadein 2s;
     }    
@@ -373,7 +372,7 @@ footer .contactButton
         text-align: center;
         position: relative;
     }
-    /* animated menu slide down */
+    /* --- animation menu slide down --- */
     .navbarLinks li
     {
         animation: menuSlide 1s forwards;
@@ -410,7 +409,8 @@ footer .contactButton
         }
     }
 }
-/* replace back to top */
+
+/* verplaats back to top */
 @media screen and (max-width: 745px)
 {
     .backToTop
@@ -422,7 +422,6 @@ footer .contactButton
 /* ---- TELEFOON FOOTER ---- */
 @media screen and (max-width: 550px)
 {
-    /* ---- FOOTER ---- */
     #footerDesktop
     {
         display: none;
@@ -455,7 +454,6 @@ footer .contactButton
     }
 }
 
-
 /* ----- TELEFOON LANDSCAPE ----- */
 @media screen and (max-height: 500px)
 {
@@ -475,7 +473,7 @@ footer .contactButton
     }
 }
 
-/* --- hamburger weghalen als scherm te klein is --- */
+/* --- hamburger verplaatsen als scherm te klein is --- */
 @media screen and (max-width: 340px)
 {
     #burgerButton

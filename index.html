@@ -11,7 +11,7 @@
         <title>
             Portfolio | Pepijn Emmers
         </title>
-        <!-- browser icon toevoegen -------------------------------------------->
+        <!-- browser icon toevoegen -->
         <link rel="icon" href="images/icon.png">
         <!-- Tekenset declareren -->
         <meta charset="UTF-8">
@@ -46,7 +46,7 @@
                 <span class="dots">.</span>
                 <span class="dots">.</span>
             </h2> 
-            <span id="skiploading" onclick="skipLoading()"></span>
+            <div id="skiploading" onclick="skipLoading()"></div>
         </div>
         <header onscroll="stickyHeader()" id="header">
             <!-- Navigatie balk --> 
@@ -78,7 +78,7 @@
                     <span class="grandientColor">Junior Software Developer HTML, CSS &amp; Javascript</span>
                 </h1>
                 <div id="content">
-                    <p>
+                    <p id="firstPar">
                         Welkom op mijn portfolio website!<br>
                         Ik ben Pepijn Emmers en ik ben 16 jaar. Op dit moment volg ik de opleiding Software Development op het
                         Koning Willem I college in <span class="noWrap">’s-Hertogenbosch</span>. Dit is mijn eerste leerjaar en het bevalt me goed!<br>
@@ -95,7 +95,7 @@
                     </p>
                     <p>
                         Voor meer informatie over mijn opleidingen, werkervaring of andere dingen kunt u verder kijken op deze website.<br>
-                        Wil je contact met mij opnemen? Klik dan op de contactknop. Je vindt deze onderaan elke pagina of hier onder deze zin.
+                        Wil je contact met mij opnemen? Klik dan op de contactknop. Je vindt deze onderaan elke pagina of onder deze zin.
                     </p>
                 </div>
                 <p>
@@ -104,9 +104,10 @@
                 </p>
             </div>
             <div id="homeImage">
-                <img src="images/myself.png">
+                <img src="images/myself.png" alt="foto-van-mij.png">
             </div>        
         </main>
+        <!-- engelse vlag --> 
         <div id="homeFooter">
             <a href="contact.html#english">
                 <img src="images/Engelse-vlag.svg" id="englishFlag" title="Click here for the English version">

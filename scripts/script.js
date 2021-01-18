@@ -116,6 +116,7 @@ function closeIframe()
 {
     iframePopup.style.cssText = "opacity 0; pointer-events: none;";
 }
+
 //als naast iframe word geklikt, sluit iframe
 window.onclick = function(event)
 {

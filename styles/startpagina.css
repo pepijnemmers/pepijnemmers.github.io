@@ -161,7 +161,7 @@
     height: 40px;
 }
 
-/* standaard styling geven */
+/* --- main styling --- */
 main
 {
     width: calc(100% - 40px);
@@ -196,9 +196,10 @@ h1
     margin-top: 0;
     text-decoration: none;
 }
-h1::first-letter
+#firstPar::first-letter
 {
-    font-size: 1.25em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 .noWrap
 {
@@ -237,7 +238,7 @@ h1::first-letter
     width: 130px;
 }
 
-/*  --- homepage footer --- */
+/*  --- homepage footer/engelse vlag --- */
 #homeFooter
 {
     position: fixed;
@@ -260,13 +261,6 @@ h1::first-letter
     position: relative;
     right: 40px;
     bottom: 15px;
-}
-@keyframes openEnglish
-{
-    to{
-        opacity: 1;
-        pointer-events: all;
-    }
 }
 
 /* ----- TELEFOON PORTRAIT ----- */

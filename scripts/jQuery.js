@@ -5,7 +5,7 @@
     jQuery Javascript portfolio
 */
 
-//onclick slide hobby menu standaard naar boven
+//hobby menu standaard naar gesloten
 $(".hobbyContent").hide(); 
 
 //onclick toggle all open or all closed

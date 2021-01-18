@@ -371,6 +371,7 @@ h2 + p
         top: -125px;
     }
 }
+
 /* ---- iframe responsive ---- */
 @media screen and (max-width: 400px)
 {

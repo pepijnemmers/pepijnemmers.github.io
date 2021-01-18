@@ -17,7 +17,7 @@ var project = [7.5, 9.6, 10.0, 7.8, "n.v.t.", 9.5, 9.0, 8.7, "Voldoende" ];
 //array maken met gemiddelde cijfers
 var gemiddeld = [7.8, 8.8, 9.6, 8.4, 8.0, 8.0, 9.5, 8.7, "Voldoende"];
 
-//gemiddelde in tabel zetten
+//gemiddelde en cijfers in tabel zetten
 var message = "";
 function addTableContent()
 {

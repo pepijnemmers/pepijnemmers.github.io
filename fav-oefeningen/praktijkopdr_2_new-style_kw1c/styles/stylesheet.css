@@ -34,20 +34,20 @@
 /* body een style geven */
 body
 {
-    font-family: 'roboto', 'Sintony', sans-serif;
+    font-family: sans-serif;
     margin: 0px;
 }
 /* alle h2 element style geven */ 
 h2
 {
-    font-family: 'roboto', sans-serif;
+    font-family: sans-serif;
     font-size: 22px;
     font-weight: bolder;
 }
 /* alle p element style geven */ 
 p
 {
-    font-family: 'Sintony', sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     font-weight: normal;
 }
@@ -355,7 +355,7 @@ textarea
 .content h3
 {
     color: #fff; 
-    font-family: 'roboto', sans-serif;
+    font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin: 20px;
@@ -363,7 +363,7 @@ textarea
 /* h4 in content een style en positie geven */
 .content h4
 {
-    font-family: 'roboto', sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     font-weight: bold;
     font-style: italic; 

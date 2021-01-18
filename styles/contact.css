@@ -5,6 +5,7 @@
     stylesheet contact pagina
 */
 
+/* --- main stylen --- */
 main a
 {
     color: #fff;
@@ -15,7 +16,7 @@ main
 }
 section
 {
-    margin: 50px 0;
+    margin: 0 0 50px 0;
 }
 section#contactGegevens 
 {
@@ -30,6 +31,85 @@ ul, li
 {
     margin-left: 10px;
     padding-left: 0;
+}
+
+/* ---- contactformulier ---- */
+#formContainer
+{
+    background-color: #121212;
+    box-shadow: 5px 5px 15px #121212, -5px -5px 15px #121212;
+    display: flex;
+    width: 80%;
+    margin: 0;
+}
+#contactLeft
+{
+    background-image: url(../images/contactLeft.jpg);
+    background-size: cover;
+    width: 40%;
+    height: 500px;
+    filter: blur(1px);
+}
+#contactRight
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#contactRight h3
+{
+    width: 70%;
+    margin: 20px auto 5px auto;
+    text-align: center;
+    text-decoration: underline #ffee00;
+}
+.contactInput
+{
+    background-color: #242424;
+    color: #fff;
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.contactInput::placeholder
+{
+    font-family: 'poppins', sans-serif;
+    opacity: 0.8;
+    color: #fff;
+}
+.contactInput:focus::placeholder
+{
+    opacity: 0.3;
+}
+textarea
+{
+    resize: none;
+    min-height: 100px;
+}
+
+/* --- send button --- */
+#contactSend
+{
+    background:linear-gradient(to bottom, #ffee00 0%, #ffee00 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-size 0.5s;
+    
+    border: none;
+    outline: none;
+    width: 60%;
+    margin: 0 auto 15px auto;
+}
+#contactSend:hover 
+{
+    background-size: 4px 50px;
+    color: #000;
+    font-weight: bold;
 }
 
 /* --- buttons --- */
@@ -70,6 +150,60 @@ ul, li
 {
     cursor: pointer;
 }
+
+/* --- social media pop up --- */
+#socialMediaPopUp
+{
+    position: fixed;
+    height: 50%;
+    width: 100%;
+    z-index: 10;
+    
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    transition: 0.2s linear;
+    pointer-events: none;
+    opacity: 0;
+}
+#closeMediaPopUp
+{
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#bgSocialMedia
+{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#socialMedia
+{
+    width: 500px;
+    height: auto;
+}
+.socialMediaIcon, #snapchat
+{
+    width: 170px;
+    height: auto;
+}
+.socialMediaIcon:hover
+{
+    transform: scale(1.3);
+    transition: 0.2s linear;
+}
+
 /* ---- contact card ---- */
 #contactCard
 {
@@ -119,7 +253,7 @@ ul, li
     opacity: 1;
     left: -28%;   
 }
-/* the style of content */
+/* content style */
 .contactCard .cardContent h2
 {
     color: #ffee00;
@@ -156,6 +290,7 @@ ul, li
 {
     opacity: 0;
 }
+
 /* ---- responsive ---- */
 @media screen and (max-width: 990px)
 {
@@ -181,6 +316,11 @@ ul, li
     {
         justify-content: space-between;
     }
+    #socialMedia
+    {
+        width: 400px;
+        height: auto;
+    }
     /* -- contactformulier -- */
     #formContainer
     {
@@ -200,7 +340,7 @@ ul, li
 /* ---- responsive ---- */
 @media screen and (max-width: 760px)
 {
-    /* -- contact kaart -- */
+    /* contact kaart */
     .contactCard
     {
         position: relative;
@@ -221,7 +361,7 @@ ul, li
         width: 300px;
         height: auto;
     }
-    /* -- social media pop up -- */
+    /* social media pop up */
     .socialMediaIcon
     {
         width: 90px;
@@ -240,7 +380,7 @@ ul, li
     {
         top: 75px;
     }
-    /* -- contactformulier -- */
+    /* contactformulier */
     #formContainer
     {
         width: 95%;
@@ -255,9 +395,15 @@ ul, li
         width: 70%;
     }
 }    
+
 /* --- responsive --- */
 @media screen and (max-width: 580px)
 {
+    #socialMedia
+    {
+        width: 300px;
+        height: auto;
+    }
     #englishButtons
     {
         display: block;
@@ -289,6 +435,8 @@ ul, li
         top: -20%;   
     }
 }   
+
+/* --- responsive --- */
 @media screen and (max-width: 500px)
 {
     .contactCard:hover
@@ -319,6 +467,7 @@ ul, li
         left: 0%;   
         top: -25%;   
     }
+    /* social media */
     .socialMediaIcon
     {
         width: 50px;
@@ -328,7 +477,12 @@ ul, li
     {
         margin-left: 25px;
     }
-    /* -- contactformulier -- */
+    #socialMedia
+    {
+        width: 95%;
+        height: auto;
+    }
+    /* contactformulier */
     #formContainer
     {
         width: 100%;
