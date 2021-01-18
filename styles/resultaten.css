@@ -488,8 +488,8 @@ tbody tr:hover, tbody th:hover
 {
     .cardContainer
     {
-        width: 230px;
-        height: 400px;
+        width: 250px;
+        height: 420px;
     }
     .card .cardTitle
     {
@@ -501,12 +501,12 @@ tbody tr:hover, tbody th:hover
     }
     .card .cardIcon
     {
-        height: 150px;
+        height: 170px;
         margin-bottom: 5px;
     }
     .card .cardIcon img
     {
-        height: 130px;
+        height: 150px;
         margin: 10px;
     }
     .card .cardFront p, .card .cardBack p
@@ -521,5 +521,10 @@ tbody tr:hover, tbody th:hover
     .screenToSmall span, .screenToSmall p, .boxFoot
     {
         display: none;
+    }
+    .cardContainer
+    {
+        width: 95%;
+        height: 550px;
     }
 }
