@@ -17,13 +17,13 @@ var m = new Date();
 var months = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "October", "November", "December"];
 var thisMonth = months[m.getMonth()];
 
-if(thisMonth = "Januari")
+if(thisMonth == "Januari")
     {
         age = age - 1;
     }
 else
     {
-        age = age
+        age = age;
     }
 document.getElementById("myAge").innerHTML = age + " " + "jaar";
  
