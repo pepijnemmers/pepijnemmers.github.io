@@ -166,6 +166,7 @@ main
 {
     width: calc(100% - 40px);
     height: auto;
+    padding-bottom: 250px;
 }
 #homeContent
 {
