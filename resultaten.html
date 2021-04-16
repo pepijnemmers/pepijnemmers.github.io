@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
     Auteur: Pepijn Emmers 
-    Aanmaakdatum: 14-12-2020
+    Aanmaakdatum: 14-12-2020 *Updated 1-2-2021 P. Emmers
 
     resultaten pagina portfolio
 -->
@@ -60,18 +60,30 @@
                     <thead id="tableHead">
                         <tr>
                             <th rowspan="2">Vakken</th>
-                            <th colspan="4">Periode 1</th>
+                            <th colspan="4">
+                                <select id="cijferPer" name="periode" onchange="addTableContent()">
+                                    <optgroup label="Leerjaar 1">
+                                        <option value="per1" title="Leerjaar 1">Periode 1</option>
+                                        <option value="per2" title="Leerjaar 1">Periode 2</option>
+                                        <option value="per3" title="Nog geen resultaten" disabled>
+                                            Periode 3 &#10060;
+                                        </option>
+                                        <option value="per4" title="Nog geen resultaten" disabled>
+                                            Periode 4 &#10060;
+                                        </option>
+                                    </optgroup>
+                                </select>
+                            </th>
                         </tr>
                         <tr id="periodeCat">
                             <th>Oefeningen</th>
                             <th>Praktijkopdracht</th>
                             <th>Project/toets</th>
-                            <th>Gemiddelde</th>
+                            <th>Gemiddelde (periode)</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
                 </table>
-                <button id="calcAverage" onclick="addTableContent()">Toon resultaten</button>
             </section>
             
             <!-- projecten -->
@@ -139,7 +151,6 @@
                     </div>
                 </div>
             </div>
-            <div id="spacebottom"></div>
             
             <!-- werkwijze -->
             <h2>Werkwijze</h2>
