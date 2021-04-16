@@ -1,6 +1,6 @@
 /*
     Auteur: Pepijn Emmers 
-    Aanmaakdatum: 6-1-2020
+    Aanmaakdatum: 6-1-2020 *Updated 1-2-2021 P. Emmers
 
     stylesheet resultaten pagina
 */
@@ -17,9 +17,9 @@ h2
 #downloadCijfers
 {
     color: #fff;
-    display: block;
+    display: inline;
     font-size: 14px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 /* table style geven */
@@ -41,6 +41,41 @@ thead
     font-family: 'montserrat';
     border-bottom: 3px solid #ffee00;
 }
+thead select
+{
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 100%;
+    background-color: #121212;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'montserrat';
+    cursor: pointer;  
+}
+thead select optgroup, thead select option
+{
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 0;
+    background-color: #121212;
+    color: #fff;
+}
+thead select optgroup
+{
+    font-family: 'PatrickHand', sans-serif;
+    font-weight: 0;
+    font-size: 20px;
+}
+thead select option:disabled:nth-child(1),thead select option:disabled:nth-child(2),thead select option:disabled:nth-child(3),thead select option:disabled:nth-child(4),thead select option:disabled:nth-child(5),thead select option:disabled:nth-child(6),thead select option:disabled:nth-child(7),thead select option:disabled:nth-child(8),thead select option:disabled:nth-child(9)
+{
+    color: rgba(255, 255, 255, 0.2);
+}
+thead select option:disabled:nth-child(10)
+{
+    color: rgba(255, 255, 255, 0.5);    
+}
 #periodeCat
 {
     font-family: 'poppins', sans-serif;
@@ -55,21 +90,7 @@ tbody tr:hover, tbody th:hover
     background-color: #ffee00;
     color: #000;
 }
-#calcAverage
-{
-    background-color: #ffee00;
-    color: #000;
-    outline: none;
-    border: none;
-    margin: 10px 0;
-    padding: 5px 10px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-#calcAverage:hover
-{
-    background-color: #ffbe0d;
-}
+
 
 /* --- mijn projecten --- */
 .fullProjectBox
@@ -228,10 +249,6 @@ tbody tr:hover, tbody th:hover
 .iframePopup .boxFoot a
 {
     color: #fff;
-}
-#spacebottom
-{
-    height: 450px;
 }
 
 /* ---- werkwijze kaarten ---- */
