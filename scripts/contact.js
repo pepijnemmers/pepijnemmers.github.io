@@ -38,3 +38,10 @@ function closeSocialMedia()
     document.getElementById("socialMediaPopUp").style.pointerEvents = "none";
     document.getElementById("socialMediaPopUp").style.opacity = 0;
 }
+
+/* contact form */
+document.getElementById("contactSend").addEventListener("click", contactNotAvailable);
+function contactNotAvailable() {
+    alert("Helaas werkt dit nog niet. Probeer het later opnieuw!");
+}
+
