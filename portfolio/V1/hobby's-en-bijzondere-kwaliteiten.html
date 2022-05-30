@@ -1,0 +1,195 @@
+<!doctype html>
+<!--
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 14-12-2020
+
+    hobby's en bijzondere kwaliteiten pagina portfolio
+-->
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Pepijn Emmers - Hobby's &amp; Bijzondere kwaliteiten
+        </title>
+        <!-- browser icon toevoegen -->
+        <link rel="icon" href="images/icon.png">
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="styles/hobby's.css">
+        <!-- jQuery en extern JavaScript koppelen -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/jQuery.js" defer></script>
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header onscroll="stickyHeader()" id="header">
+            <!-- Navigatie balk --> 
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" id="brandName">Pepijn Emmers</a>
+                <!-- hamburger button -->
+                <div onclick="burgerMenu()" id="burgerButton">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+                <div class="navbarLinks" id="burgerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="opleidingen.html" >Opleidingen</a></li>
+                        <li><a href="werkervaring.html">Werkervaring</a></li>
+                        <li><a href="hobby's-en-bijzondere-kwaliteiten.html" class="active">Hobby's &amp; Bijzondere kwaliteiten</a></li>
+                        <li><a href="resultaten.html">Resultaten</a></li>
+                        <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Hobby's &amp; Bijzondere kwaliteiten</h1>
+            <span id="openAll">Open alle</span> / <span id="closeAll"> Sluit alle</span>
+            <section>
+                <!-- hobby 1 -->
+                <div class="hobbyBox">
+                    <div class="titleBox"  id="titlebox1">
+                        <h2>
+                            Tennissen
+                        </h2>
+                        <span class="plusSign" id="sign1">&#43;</span>
+                    </div>
+                    <div class="hobbyContent"  id="hobbyContent1">
+                        <div class="aboutHobby">
+                            Ik tennis al sinds ik klein ben. Bijna heel mijn familie heeft getennist. Vroeger leerde ik van mijn vader, moeder en opa. Later ben ik gaan 1 keer per week gaan trainen. Dat heb ik heel lang gedaan, maar ben daar nu mee gestopt. Ik heb ook een tijd competitie gespeeld, maar ook dat doe ik niet meer. Toen ik trainde speelde ik ook af en toe mee met een toernooi, onder andere het ouder-kind toernooi met mijn vader. Nu ga ik nog af en toe vrij tennissen.
+                        </div>
+                        <div class="hobbyImg">
+                            <img src="images/tennis.jpg" alt="tennis">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- hobby 2 -->
+                <div class="hobbyBox">
+                    <div class="titleBox"  id="titlebox2">
+                        <h2>
+                            Programmeren
+                        </h2>
+                        <span class="plusSign" id="sign2">&#43;</span>
+                    </div>
+                    <div class="hobbyContent" id="hobbyContent2">
+                        <div class="aboutHobby">
+                            Ik heb vóór school nog weinig gedaan met programmeren, ik was een korte tijd bezig met een Arduino waarbij ik veel opzocht en het niet zo goed begreep. Ik wist wel ongeveer wat het deed, maar nog niet precies. Ik herken wel een aantal dingen van Arduino code in Javascript, bijvoorbeeld loopjes en een if else statement. Het heeft dus wel geholpen want daardoor leer ik nu bepaalde dingen sneller. Op school krijg ik nu HTML, CSS en Javascript en ik vind het leuk om te doen. Ik ben thuis graag bezig met programmeren en vind het leuk om dingen te bedenken en uit te werken, ook al zijn die soms iets te lastig :).
+                        </div>
+                        <div class="hobbyImg">
+                            <img src="images/programmeren.png" alt="programmeren">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- hobby 3 -->
+                <div class="hobbyBox">
+                    <div class="titleBox" id="titlebox3">
+                        <h2>
+                            Naar de sportschool
+                        </h2>
+                        <span class="plusSign" id="sign3">&#43;</span>
+                    </div>
+                    <div class="hobbyContent" id="hobbyContent3">
+                        <div class="aboutHobby">
+                            Ik ga af en toe naar de sportschool en vind dat leuk om te doen. Ik vind het fijn om te bewegen en het is altijd fijn om er te zijn. Ik heb nu ongeveer 3/4 maanden een abonnement bij Basic-fit. Door covid-19 kan ik nu een tijd niet meer sporten helaas, maar als de sportscholen weer open zijn ga ik zeker weer langs.
+                        </div>
+                        <div class="hobbyImg">
+                            <img src="images/basic-fitlogo.jpg" alt="basic-fit logo">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- hobby 4 -->
+                <div class="hobbyBox">
+                    <div class="titleBox" id="titlebox4">
+                        <h2>
+                            Gamen
+                        </h2>
+                        <span class="plusSign" id="sign4">&#43;</span>
+                    </div>
+                    <div class="hobbyContent" id="hobbyContent4">
+                        <div class="aboutHobby">
+                            Ik vind het altijd leuk en relaxed om te gamen. Lekker bankhangen en spelletjes spelen. Ik speel op de Playstation 4 vooral schietspellen zoals Call of Duty (modern warfare), Fortnite en soms GTA V. Ik vind avontuur spellen ook wel leuk maar die speel ik niet zo veel. Ook vind ik het gezellig en leuk om met familie te kaarten of bordspelletjes te spelen.
+                        </div>
+                        <div class="hobbyImg">
+                            <img src="images/controller.jpg" alt="gamecontroller">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- hobby 5 -->
+                <div class="hobbyBox">
+                    <div class="titleBox" id="titlebox5">
+                        <h2>
+                            Jongleren
+                        </h2>
+                        <span class="plusSign" id="sign5">&#43;</span>
+                    </div>
+                    <div class="hobbyContent" id="hobbyContent5">
+                        <div class="aboutHobby">
+                            Sinds kort ben ik af en toe aan het jongleren. Ik vind het leuk om te doen en zo kan ik tijdens school even ergens anders op concentreren en kijk ik even weg van mijn beeldscherm. Ook als ik me nergens op aan het concentreren ben of even weg wil kijken, vind ik het leuk om te jongleren en leer ik ook steeds meer trucjes.
+                        </div>
+                        <div class="hobbyImg">
+                            <img src="images/jongleren.jpg" alt="jongleren">
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        </main>
+        
+        <!-- Footer desktop -->
+        <footer id="footerDesktop">
+            <p>
+                &copy;Pepijn Emmers 
+            </p>
+            <div class="backToTop">
+                <i class="demo-icon" onclick="backToTop()" title="back to top">&#xe4a3;</i>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+        </footer>
+        <!-- footer mobile -->
+        <footer id="footerMobile">
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+            </div>
+            <div id="contactFooter">
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+            <p onclick="backToTop()" title="back to top">
+                &copy;Pepijn Emmers
+            </p>
+        </footer>
+    </body>
+</html>

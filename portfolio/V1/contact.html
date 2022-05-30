@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 14-12-2020
+
+    Contact pagina portfolio
+-->
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Pepijn Emmers - Contact
+        </title>
+        <!-- browser icon toevoegen -->
+        <link rel="icon" href="images/icon.png">
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <!-- extern JavaScript koppelen -->
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/contact.js" defer></script>
+    </head>
+    <body>
+        <header onscroll="stickyHeader()" id="header">
+            <!-- Navigatie balk --> 
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" id="brandName">Pepijn Emmers</a>
+                <!-- hamburger button -->
+                <div onclick="burgerMenu()" id="burgerButton">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+                <div class="navbarLinks" id="burgerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="opleidingen.html" >Opleidingen</a></li>
+                        <li><a href="werkervaring.html">Werkervaring</a></li>
+                        <li><a href="hobby's-en-bijzondere-kwaliteiten.html">Hobby's &amp; Bijzondere kwaliteiten</a></li>
+                        <li><a href="resultaten.html">Resultaten</a></li>
+                        <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact</h1>
+            <!-- contact gegevens -->
+            <h2>Contact gegevens</h2>
+            <section id="contactGegevens">
+            <div>
+                    <ul>
+                    <li>
+                        Naam: Pepijn Emmers
+                    </li>
+                    <li>
+                        Woonplaats: Drunen
+                    </li>
+                    <li>
+                        E-mail: <a href="mailto:pepijn.emmers@hotmail.com">pepijn.emmers@hotmail.com</a>
+                    </li>
+                </ul>
+                <p>
+                    Je kunt altijd contact opnemen via de mail, door op de knop hieronder te drukken of stuur me een bericht via <span onclick="openSocialMedia()">social media</span>.<br>
+                    Mocht je telefonisch contact op willen nemen, stuur dan een mail met je eigen telefoonnummer en dan zal ik zo snel mogelijk contact met je opnemen.
+                </p>
+                <p>
+                    Bedankt voor het bezoeken van mijn website!
+                </p>
+                <a href="mailto:pepijn.emmers@hotmail.com" class="sendMail button">Stuur me een e-mail</a>
+            </div>
+            <img src="images/socialMedia.jpg" id="socialMedia" onclick="openSocialMedia()" alt="social media" title="Click me for social media!">
+            </section>
+            
+            <!-- contact formulier -->
+            <section>
+                <h2>Contactformulier</h2>
+                <div id="formContainer">
+                    <div id="contactLeft"></div>
+                    <div id="contactRight">
+                        <h3>Contact me!</h3>
+                        <input type="text" class="contactInput" placeholder="Your fullname">
+                        <input type="text" class="contactInput" placeholder="Your Email">
+                        <input type="text" class="contactInput" placeholder="Your Phone">
+                        <textarea class="contactInput" placeholder="Your message"></textarea>
+                        <button id="contactSend">Versturen</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- engelse contact gegevens -->
+            <section id="english">
+                <h2>Contact in English</h2>
+                <p>
+                    Please contact me if you have any questions. You can contact me by e-mail or social media.<br>
+                    If you want to contact me by phone, please send an e-mail with your phone number and i will contact you as soon as possible!<br>
+                    You can download my English Curriculum Vitae by pressing the button below. 
+                </p>
+                <p>
+                    Thank you for visiting my website!
+                </p>
+                <div id="englishButtons">
+                    <a href="download-documents/English%20Curriculum%20Vitae%20-%20Pepijn%20Emmers.pdf" download id="englishCv" class="button">English Curriculum Vitae</a>
+                    <a href="mailto:pepijn.emmers@hotmail.com" class="sendMail button">Send me an e-mail</a>
+                </div>
+            </section>
+            
+            <!-- social media pop up -->
+            <section id="socialMediaPopUp">
+                <span id="closeMediaPopUp" onclick="closeSocialMedia()">&times;</span>
+                <div id="bgSocialMedia"></div>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <img src="images/social-media/facebook.png" class="socialMediaIcon" alt="facebook"> 
+                </a>
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <img src="images/social-media/linkedin.png" class="socialMediaIcon" alt="linkedIn">
+                </a> 
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                     <img src="images/social-media/instagram.png" class="socialMediaIcon" alt="instagram"> 
+                </a>
+                <figure>
+                    <img src="images/social-media/snapchat.png" id="snapchat" title="snapchat" alt="snapchat">
+                    <figcaption>@pepijn_emmers8</figcaption>
+                </figure>
+            </section>
+            
+            <!-- visite kaart -->
+            <section id="contactCard">
+                <h2>Visitekaart</h2>
+                <div class="contactCard">
+                    <div class="cardContent" id="cardContent">
+                        <h2>Contact gegevens</h2>
+                        <ul id="visiteKaartContent">
+                            <li>Software Developer</li>
+                            <li>Naam: Pepijn Emmers</li>
+                            <li>Leeftijd: <span id="myAge"></span></li>
+                            <li>Woonplaats: Drunen</li>
+                            <li>pepijn.emmers@hotmail.com</li>
+                        </ul>
+                        <a href="mailto:pepijn.emmers@hotmail.com">Stuur een e-mail</a>
+                    </div>
+                    <img src="images/myself.png" id="cardImg" alt="ik-zelf.png">
+                    <i id="cardText">Hover or click me!</i>
+                </div>
+            </section>
+        </main>
+        
+        <!-- footer desktop -->
+        <footer id="footerDesktop">
+            <p>
+                &copy;Pepijn Emmers 
+            </p>
+            <div class="backToTop">
+                <i class="demo-icon" onclick="backToTop()" title="back to top">&#xe4a3;</i>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+            </div>
+        </footer>
+        <!-- footer mobile -->
+        <footer id="footerMobile">
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+            </div>
+            <p onclick="backToTop()" id="contactpageCopyright" title="back to top">
+                &copy;Pepijn Emmers 
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<!--
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 14-12-2020
+
+    Werkervaring pagina portfolio
+-->
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Pepijn Emmers - Werkervaring
+        </title>
+        <!-- browser icon toevoegen -->
+        <link rel="icon" href="images/icon.png">
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="styles/werkervaring.css">
+        <!-- extern JavaScript koppelen -->
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header onscroll="stickyHeader()" id="header">
+            <!-- Navigatie balk --> 
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" id="brandName">Pepijn Emmers</a>
+                <!-- hamburger button -->
+                <div onclick="burgerMenu()" id="burgerButton">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+                <div class="navbarLinks" id="burgerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="opleidingen.html">Opleidingen</a></li>
+                        <li><a href="werkervaring.html" class="active">Werkervaring</a></li>
+                        <li><a href="hobby's-en-bijzondere-kwaliteiten.html">Hobby's &amp; Bijzondere kwaliteiten</a></li>
+                        <li><a href="resultaten.html">Resultaten</a></li>
+                        <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>    
+        <main>
+            <h1>Werkervaring</h1>
+            <!-- (bij)baan 1 -->
+            <section>
+                <div id="workImg">
+                    <figure>
+                        <img src="images/blauw-waalwijk.jpg" alt="blauw eten en drinken waalwijk">
+                        <figcaption>Blauw eten en drinken Waalwijk</figcaption>
+                    </figure>
+                </div>
+                <div id="blauwEtenContent">
+                    <h2>Blauw eten &amp; drinken - Waalwijk</h2>
+                    <h3>
+                        Ervaring
+                    </h3>
+                    <p>
+                        Ik werk met veel plezier bij blauw. Ik sta in de afwas en help veel mee in de keuken, daar help ik vooral met de voor- en nagerechten.<br>
+                        Ik ga graag naar mijn werk en kan het goed vinden met mijn collega’s. We kunnen het goed vinden met elkaar en ik ga altijd graag naar mijn werk.<br> 
+                        De eerste keer dat ik daar kwam, kwam ik daar eten. Het personeel was toen zo gezellig en vriendelijk dat ik gelijk een afspraak had geregeld om een keer langs te komen voor een proefdagje. <br>
+                        Ik kwam proefdraaien op de zaterdag, de drukste dag van de week. En net die dag was er ook een feest gaande in de stad. Het was dus gelijk erg druk! <br>
+                        Ook had ik nog nooit ergens gesolliciteerd dus het was wel spannend, maar het beviel me zeker. <br>
+                        Ik werk er sinds juni 2019 en ik hoop daar nog lang te blijven werken.
+                    </p>
+                    <h3>Gegevens</h3>
+                    <p>
+                        Blauw eten &amp; drinken<br>
+                        Grotestraat 5141HD Waalwijk<br>
+                    <a href="https://blauwetenendrinken.nl/" target="_blank" class="openSiteButton">www.blauwetenendrinken.nl</a>   
+                    </p>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer desktop -->
+        <footer id="footerDesktop">
+            <p>
+                &copy;Pepijn Emmers 
+            </p>
+            <div class="backToTop">
+                <i class="demo-icon" onclick="backToTop()" title="back to top">&#xe4a3;</i>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+        </footer>
+        <!-- footer mobile -->
+        <footer id="footerMobile">
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+            </div>
+            <div id="contactFooter">
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+            <p onclick="backToTop()" title="back to top">
+                &copy;Pepijn Emmers
+            </p>
+        </footer>
+    </body>
+</html>

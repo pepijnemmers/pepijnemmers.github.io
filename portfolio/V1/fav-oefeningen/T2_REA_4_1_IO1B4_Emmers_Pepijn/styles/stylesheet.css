@@ -1,0 +1,52 @@
+/*
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 16-12-2020
+
+    T2 REA oefening 4.1
+*/
+
+body
+{
+    font-family: sans-serif;
+    color: black;
+}
+/* tabel standaard styling geven */
+table, th, td
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, #geenOptreden, .mysteryArtist
+{
+    color: white;
+}
+#festivalProgamma
+{
+    background-color: black;
+    font-size: 30px;
+    padding: 20px;
+}
+#zaterdag
+{
+    background-color: grey;
+    font-size: 24px;
+    padding: 20px;
+}
+tbody th
+{
+    background-color: #00386a;
+    font-weight: normal;
+}
+.bold
+{
+    font-weight: bold;
+}
+#geenOptreden
+{
+    background-color: #a82a2c;
+}
+.mysteryArtist
+{
+    background-color: #cda434;
+}

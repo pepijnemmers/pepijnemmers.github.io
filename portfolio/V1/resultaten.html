@@ -1,0 +1,340 @@
+<!doctype html>
+<!--
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 14-12-2020
+
+    resultaten pagina portfolio
+-->
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Pepijn Emmers - Resultaten
+        </title>
+        <!-- browser icon toevoegen -->
+        <link rel="icon" href="images/icon.png">
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="styles/resultaten.css">
+        <!-- extern JavaScript koppelen -->
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/resultaten.js" defer></script>
+    </head>
+    <body>
+        <header onscroll="stickyHeader()" id="header">
+            <!-- Navigatie balk --> 
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" id="brandName">Pepijn Emmers</a>
+                <!-- hamburger button -->
+                <div onclick="burgerMenu()" id="burgerButton">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+                <div class="navbarLinks" id="burgerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="opleidingen.html">Opleidingen</a></li>
+                        <li><a href="werkervaring.html">Werkervaring</a></li>
+                        <li><a href="hobby's-en-bijzondere-kwaliteiten.html">Hobby's &amp; Bijzondere kwaliteiten</a></li>
+                        <li><a href="resultaten.html" class="active">Resultaten</a></li>
+                        <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>Resultaten</h1>
+            <!-- cijferlijst -->
+            <section id="cijferlijst">
+                <h2>Cijferlijst</h2>
+                <a href="download-documents/Cijferlijst%20Pepijn%20Emmers%20P1%20leerjaar%201.pdf" download target="_blank" id="downloadCijfers">
+                    Download hier mijn cijferlijst
+                </a>
+                <table>
+                    <thead id="tableHead">
+                        <tr>
+                            <th rowspan="2">Vakken</th>
+                            <th colspan="4">Periode 1</th>
+                        </tr>
+                        <tr id="periodeCat">
+                            <th>Oefeningen</th>
+                            <th>Praktijkopdracht</th>
+                            <th>Project/toets</th>
+                            <th>Gemiddelde</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button id="calcAverage" onclick="addTableContent()">Toon resultaten</button>
+            </section>
+            
+            <!-- projecten -->
+            <section id="projecten">
+                <h2>Mijn projecten</h2> 
+                <!-- project 1 -->
+                <div class="fullProjectBox">
+                    <div class="projectBox">
+                        <div class="project" onclick="openIframe5()">
+                            <img src="images/project1.jpg" alt="project 1">
+                            <div class="clickOverlay">
+                                Click me!
+                            </div>
+                        </div>
+                        <div class="projectTekst">
+                            <h3>Periode 1 - Project 1</h3>
+                            <p>
+                                De opdracht was hier om een website te maken voor een sportvereniging. Dit hebben we in een groepje van 3 gedaan. Ik ben trots op het resultaat en heb veel geleerd. (De website is niet responsive.)<br>
+                                <span class="datum">20-10-2020</span> 
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                <!-- project 2 -->
+                <div class="fullProjectBox">
+                    <div class="projectBox">
+                        <div class="project" onclick="openIframe6()">
+                            <img src="images/praktijkopdracht1.jpg" alt="praktijkopdracht 1">
+                            <div class="clickOverlay">
+                                Click me!
+                            </div>
+                        </div>
+                        <div class="projectTekst">
+                            <h3>Periode 2 - praktijkopdracht 1</h3>
+                            <p>
+                                De opdracht was hier om een nieuwe huisstijl te maken voor het Koning Willem I College. Na het maken van die nieuwe stijl, moest je de startpagina met die stijl maken. (De website is niet responsive.)<br>
+                                <span class="datum">21-11-2020</span> 
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+                        
+            <!-- iframe pop up -->
+            <div class="iframePopup">
+                <div  class="iframeBox">
+                    <div class="boxHead">
+                        <h2 id="projectNmb"></h2>
+                        <span class="closeIframe" onclick="closeIframe()">&times;</span>
+                    </div> 
+                    <div class="boxBody">
+                        <iframe src="#" id="projectIframe"></iframe>
+                        <div class="screenToSmall">
+                            <h3>Sorry, op uw scherm werkt het iframe niet goed.</h3>
+                            <img src="images/smiley_sip.png" alt="verdrieitige-smiley.png">
+                            <p>
+                            <span>Wilt u toch de website bekijken?</span><br>
+                            Klik hier onder op nieuw tabblad of gebruik een apparaat met een groter scherm.<br><br>
+                            <span id="responsiveMelding">De site kan minder goed werken op een telefoon.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="boxFoot">
+                        <a href="#" target="_blank" id="openNewtab">Open in nieuw tabblad</a> 
+                    </div>
+                </div>
+            </div>
+            <div id="spacebottom"></div>
+            
+            <!-- werkwijze -->
+            <h2>Werkwijze</h2>
+            <p>Ga met je muis op een kaart staan of klik op een kaart</p>
+            <section id="werkwijze">
+                <!-- kaart 01 -->
+                <div class="fullCard">
+                    <div class="cardContainer">
+                        <div class="card">
+                            <figure class="cardFront">
+                                <div class="cardIcon">
+                                    <img src="images/card-icons/01plannen.png" alt="plannen">
+                                </div>
+                                <span class="cardNmb">01.</span> <span class="cardTitle">Plannen</span>
+                                <p>
+                                    Als eerste begin ik met een gesprek met de klant waarin de klant kan vertellen wat zijn of haar wensen zijn.<br>
+                                    Vervolgens maak ik een projectplan.
+                                </p>
+                            </figure>
+                            <figure class="cardBack">
+                                <span class="cardNmb">01.</span> <span class="cardTitle">Plannen</span>
+                                <p>
+                                    Ik zal starten met een klantgesprek dat fysiek of online plaats vind.<br>
+                                    Tijdens het klantgesprek zal ik een aantal vragen stellen en kan de klant al zijn/haar wensen delen.<br>
+                                    Aan het eind van het gesprek zal ik alle wensen nog een keer doorlopen en daaruit maak ik een gespreksverslag.<br>
+                                    Na het gesprek, zal ik een projectplan gaan maken en die delen met de klant.
+                                </p>
+                            </figure>
+                        </div>    
+                    </div>
+                </div>
+                <!-- kaart 02 -->
+                <div class="fullCard">
+                    <div class="cardContainer">
+                        <div class="card">
+                            <figure class="cardFront">
+                                <div class="cardIcon">
+                                    <img src="images/card-icons/02ontwerpen.png" alt="ontwerpen">
+                                </div>
+                                <span class="cardNmb">02.</span> <span class="cardTitle">Ontwerpen</span>
+                                <p>
+                                    Na het plannen ga ik een functioneel ontwerp maken. Die zal ik delen met de klant en zal dan een aantal kritiekpunten aanpassen.
+                                </p>
+                            </figure>
+                            <figure class="cardBack">
+                                <span class="cardNmb">02.</span> <span class="cardTitle">Ontwerpen</span>
+                                <p>
+                                    Ik maak na het klantgesprek en projectplan een functioneel ontwerp. <br>
+                                    Hier in laat ik duidelijk zien welke kleuren er gebruikt gaan worden, waarom die kleuren en op welk element. Dat zal ik hetzelfde doen met lettertype en lettergrootte.<br>
+                                    Ook laat ik de inrichting van het menu zien, maak ik een sitemap en tot slot zal ik schetsen maken waarop duidelijk te zien is hoe de pagina eruit komt te zien. 
+                                </p>
+                            </figure>
+                        </div>    
+                    </div>
+                </div>
+                <!-- kaart 03 -->
+                <div class="fullCard">
+                    <div class="cardContainer">
+                        <div class="card">
+                            <figure class="cardFront">
+                                <div class="cardIcon">
+                                    <img src="images/card-icons/03realiseren.png" alt="realiseren">
+                                </div>
+                                <span class="cardNmb">03.</span> <span class="cardTitle">Realiseren</span>
+                                <p>
+                                    Na het plannen en ontwerpen zal ik de website gaan bouwen en de schets zo goed mogelijk na maken. 
+                                </p>
+                            </figure>
+                            <figure class="cardBack">
+                                <span class="cardNmb">03.</span> <span class="cardTitle">Realiseren</span>
+                                <p>
+                                    Als ik het ontwerp af heb, kan ik gaan programmeren.<br>
+                                    Ik bouw de website en zet daar de teksten (content) in die de klant heeft doorgegeven. Ook kan de klant eigen afbeeldingen insturen en zal ik die er ook in verwerken. <br>
+                                    Ook moet de klant zijn/haar eigen logo doorsturen. Mocht de klant dat niet zelf willen doen, kunnen we dat natuurlijk regelen.
+                                </p>
+                            </figure>
+                        </div>    
+                    </div>
+                </div>
+                <!-- kaart 04 -->
+                <div class="fullCard">
+                    <div class="cardContainer">
+                        <div class="card">
+                            <figure class="cardFront">
+                                <div class="cardIcon">
+                                    <img src="images/card-icons/04testen.png" alt="testen">
+                                </div>
+                                <span class="cardNmb">04.</span> <span class="cardTitle">Testen</span>
+                                <p>
+                                    Na het bouwen van de website ga ik de site testen op alle fouten om te voorkomen dat de klant een site krijgt met fouten erin.
+                                </p>
+                            </figure>
+                            <figure class="cardBack">
+                                <span class="cardNmb">04.</span> <span class="cardTitle">Testen</span>
+                                <p>
+                                    Er zullen altijd een aantal fouten in de website zitten. Die ga ik door middel van een testplan opzoeken en zal die in de volgende fase verbeteren. <br>
+                                    Bij het testen let ik op fouten zoals linkjes die niet werken, pagina errors etc.<br>
+                                    Ik zal hierbij niet op spelfouten letten in de tekst omdat de klant de teksten zelf levert. Mochten ik toevallig spelfouten tegen komen, zal ik dit na overleg met de klant verbeteren.
+                                </p>
+                            </figure>
+                        </div>    
+                    </div>
+                </div>
+                <!-- kaart 05 -->
+                <div class="fullCard">
+                    <div class="cardContainer">
+                        <div class="card">
+                            <figure class="cardFront">
+                                <div class="cardIcon">
+                                    <img src="images/card-icons/05verbeteren.png" alt="verbeteren">
+                                </div>
+                                <span class="cardNmb">05.</span> <span class="cardTitle">Verbeteren</span>
+                                <p>
+                                    Na het testen zal ik de gevonden fouten gaan verbeteren. Ik zal zorgen dat er geen fouten meer in de website zitten.
+                                </p>
+                            </figure>
+                            <figure class="cardBack">
+                                <span class="cardNmb">05.</span> <span class="cardTitle">Verbeteren</span>
+                                <p>
+                                    Bij het testen heb ik een testplan gemaakt met daarin een schema met alle fouten.<br>
+                                    Die fouten zal ik gaan verbeteren en vervolgens opnieuw testen tot er geen fouten meer zijn.<br>Na het verbeteren zal ik in het testplan zetten wanneer en door wie de fout is opgelost. De klant kan het testplan ook krijgen en zo inzien hoe ik te werk ben gegaan.
+                                </p>
+                            </figure>
+                        </div>    
+                    </div>
+                </div>
+                <!-- kaart 06 -->
+                <div class="fullCard">
+                    <div class="cardContainer">
+                        <div class="card">
+                            <figure class="cardFront">
+                                <div class="cardIcon">
+                                    <img src="images/card-icons/06opleveren.png" alt="opleveren">
+                                </div>
+                                <span class="cardNmb">06.</span> <span class="cardTitle">Opleveren</span>
+                                <p>
+                                    Na het hele proces van plannen, ontwerpen, ontwikkelen, testen en verbeteren, zal ik de website opleveren aan de klant.
+                                </p>
+                            </figure>
+                            <figure class="cardBack">
+                                <span class="cardNmb">06.</span> <span class="cardTitle">Opleveren</span>
+                                <p>
+                                    Tot slot zal ik de website opleveren aan de klant, daarmee een gesprek voeren en zal ik vragen of de klant tevreden is of nog kleine kritiekpuntjes heeft.<br>
+                                    Achteraf hoop ik dat we beide tevreden zijn met het resultaat. Mocht de klant later verbeteringen willen, andere kleuren of een nieuwe website, hoop ik dat we samen opnieuw een mooi project kunnen beginnen.
+                                </p>
+                            </figure>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer desktop -->
+        <footer id="footerDesktop">
+            <p>
+                &copy;Pepijn Emmers 
+            </p>
+            <div class="backToTop">
+                <i class="demo-icon" onclick="backToTop()" title="back to top">&#xe4a3;</i>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+        </footer>
+        <!-- footer mobile -->
+        <footer id="footerMobile">
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+            </div>
+            <div id="contactFooter">
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+            <p onclick="backToTop()" title="back to top">
+                &copy;Pepijn Emmers
+            </p>
+        </footer>
+    </body>
+</html>

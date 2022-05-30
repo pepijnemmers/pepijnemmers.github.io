@@ -1,0 +1,148 @@
+/*
+    Auteur:  Pepijn Emmers, Thomas Brood en Patrick Vissers
+    Aanmaakdatum:  20-10-2020
+
+    Website stylesheet
+*/
+
+/* lettertype invoegen */
+@font-face
+{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+/* hoogte, breedte en style invoegen */ 
+.content
+{
+    height: auto;
+    width: 70%;
+    font-size: 16px;
+    font-family: "roboto";
+} 
+/* afbeeldingen homepage op maat brengen en helderheid instellen */ 
+.textOverlay img
+{
+    width: 100%;
+    height: auto;
+    filter: brightness(90%);
+}
+/* div met afbeelding op homepage op juiste positie zetten */
+.textOverlay
+{
+    position: relative;
+    width: 1520px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* positie en style meegeven aan de overlay title (homepage) */
+.overlay-title
+{
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 800;
+    text-shadow: 2px 2px #000000;
+    font-family: "roboto";  
+}
+/* sub title een style meegeven (homepage) */
+span.subTitle
+{
+    font-size: 40px;
+    font-weight: normal;
+    top: 0px;
+    text-shadow: 0px 0px #000000;
+    font-style: italic;
+}
+
+/* afbeelding grootte en positie geven */
+#imageKantine
+{
+    height: auto;
+    width: 500px;
+    float: right;
+    margin-left: 50px;
+}
+
+/* style meegeven aan iframe google maps */
+#googleMaps
+{
+    float: right;
+    border: 2px solid #000;
+    height: 400px;
+    width: 600px;
+}
+
+/* dikdrukken van class */
+.bold
+{
+    font-weight: 600;
+}
+
+/* afbeelding in het midden van de regel zetten */
+.aligncenter
+{
+    text-align: center;
+}
+
+/* het vakje waar je alles invult bewerken */
+input 
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Een style maken voor de login knop */
+button 
+{
+  background-color: #088000;
+  color: white;
+  padding: 14px 20px;
+  margin-bottom: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* als je met de cursor op de knop zit, veranderd de helderheid van de knop */
+button:hover 
+{
+  opacity: 0.8;
+}
+/* de afbeeldingen in de class een maat en positie geven */
+.imagePadelEnSquash
+{
+    height: auto;
+    width: 600px;
+    float: right;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* mailadressen style meegeven */
+.mail a
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* mailadressen dikdrukken als muis er over heen gaat */ 
+.mail a:hover
+{
+    font-weight: 600;
+}
+/* de div padel en squash een maat mee geven */ 
+#padel, #squash
+{
+    height: 300px;
+    width: 100%;
+}

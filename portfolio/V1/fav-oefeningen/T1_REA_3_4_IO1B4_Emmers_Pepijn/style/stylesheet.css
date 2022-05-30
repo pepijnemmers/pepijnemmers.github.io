@@ -1,0 +1,53 @@
+/*
+    Auteur:               Pepijn Emmers
+    Aanmaakdatum:         29-9-2020  
+    
+    Opdracht 3.4 REA
+*/
+
+/* standaard achtergrond en tekst kleuren */ 
+body
+{
+    background-color: dodgerblue;
+    color: white;
+}
+/* titel aanpassen */
+h1>span
+{
+    background-color: black;
+    color: dodgerblue;
+}
+/* tweede stuk titel aanpassen */
+#introduction
+{
+    color: black;
+    background-color: dodgerblue;
+}
+
+h2>span
+{
+    color: dodgerblue;
+    background-color: white;
+}
+/* paragraaf 1 aanpassen */
+li span
+{
+    color: dodgerblue;
+    background-color: black;    
+}
+/* eerste zin wit met rode background maken*/
+li
+{
+    background-color: red;
+    color: white;
+}
+/* eerste paragraaf tekst zwart maken */ 
+li~li
+{
+    color: black;
+}
+/* class element geel maken */ 
+.element
+{
+    color: yellow;
+}

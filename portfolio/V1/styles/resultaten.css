@@ -1,0 +1,530 @@
+/*
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 6-1-2020
+
+    stylesheet resultaten pagina
+*/
+
+/* standaard styling */
+section
+{
+    margin-bottom: 30px;
+}
+h2
+{
+    margin-bottom: 0;
+}
+#downloadCijfers
+{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px
+}
+
+/* table style geven */
+table
+{
+    overflow-x: scroll;
+}
+table, tr, th, td
+{
+    border: 2px solid #ffee00;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+thead
+{
+    background-color: #121212;
+    font-size: 20px;
+    font-family: 'montserrat';
+    border-bottom: 3px solid #ffee00;
+}
+#periodeCat
+{
+    font-family: 'poppins', sans-serif;
+    font-weight:  normal;
+}
+#modules
+{
+    font-weight: normal;
+}
+tbody tr:hover, tbody th:hover
+{
+    background-color: #ffee00;
+    color: #000;
+}
+#calcAverage
+{
+    background-color: #ffee00;
+    color: #000;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+    padding: 5px 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#calcAverage:hover
+{
+    background-color: #ffbe0d;
+}
+
+/* --- mijn projecten --- */
+.fullProjectBox
+{
+    width: calc(50% - 20px);
+    margin: 20px 0 0 20px;
+    height: 450px;
+    float: left;
+}
+.projectBox
+{
+    width: 503px;
+    height: 410px;
+    background-color: #242424;
+}
+.project
+{
+    width: 500px;
+    height: 250px;
+    position: relative;
+}
+.project img
+{
+    width: 500px;
+    height: 250px;
+    cursor: pointer;
+    border: 2px solid #121212;
+    opacity: 0.8;
+}
+.project:hover img
+{
+    opacity: 1;
+}
+.project:hover .clickOverlay
+{
+    background-color: #ffbe0d;
+}
+.clickOverlay
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -180px;
+    left: 50%;
+    transform: translate(-50%);
+    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    color: #000;
+    background-color: #ffee00;
+    cursor: pointer;
+}
+.projectTekst
+{
+    color: #fff;
+    width: 100%;
+    margin: 0;
+}
+.projectTekst h3
+{
+    text-decoration: underline;
+}
+.projectTekst h3, .projectTekst p
+{
+    margin: 5px 0;
+    padding-left: 5px;
+}
+.projectTekst span.datum
+{
+    font-style: italic;
+    font-size: 0.9em;
+    text-decoration: overline;
+    float: right;
+    margin-right: 10px;
+}
+
+/* --- iframe style --- */
+.iframePopup
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s linear;
+}
+.iframePopup .iframeBox
+{  
+    height: 90%;
+    width: calc(85% - 40px);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    
+    background-color: #242424;
+    border: 1px solid #121212;
+    box-shadow: 5px  5px  5px #121212, inset 0px  0px  5px #121212;  
+}
+.iframePopup .boxHead
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iframePopup .closeIframe
+{
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 40px;
+    margin: 0 1px;
+    cursor: pointer;
+}
+.iframePopup .boxBody
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframePopup .boxBody iframe
+{
+    width: 90%;
+    height: 80%;
+    margin-top: 30px;
+    border: 2px solid #121212;
+    box-shadow: 0px 0px 5px #121212;
+    background-color: #fff;
+}
+.screenToSmall
+{
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+.iframePopup .boxFoot
+{
+    float: right;
+    margin: -45px 20px 0 0;
+}
+.iframePopup .boxFoot a
+{
+    color: #fff;
+}
+#spacebottom
+{
+    height: 450px;
+}
+
+/* ---- werkwijze kaarten ---- */
+#werkwijze
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 100px;    
+}
+.fullCard
+{
+    margin: 20px 80px 20px 0;
+}
+.cardContainer
+{
+    width: 280px;
+    height: 430px;
+}
+.card
+{   
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+.cardContainer:hover .card
+{
+    transform: rotateY(180deg);
+}
+.card figure
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    margin: 0;  
+    padding: 0;
+    text-align: center;
+}
+.card .cardTitle
+{
+    font-family: 'poppins';
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.card .cardBack .cardTitle
+{
+    text-decoration: underline;
+    font-size: 24px;
+}
+.card .cardBack .cardNmb
+{
+    font-size: 28px;
+}
+.card .cardNmb
+{
+    font-family: 'PatrickHand';
+    font-size: 35px;
+    margin-right: 10px;
+    color: #ffee00;
+}
+.card .cardFront
+{
+    background: linear-gradient(140deg, #121212, #242424);
+    box-shadow: 5px 5px 10px #121212;
+}
+.card .cardIcon
+{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+}
+.card .cardIcon img
+{
+    height: 150px;
+    width: auto;
+    margin: 20px;
+}
+.card .cardFront p
+{
+    padding: 10px 20px;
+}
+.card .cardBack
+{
+    background: linear-gradient(-45deg, #121212, #242424);
+    box-shadow: -5px 5px 10px #121212;
+    transform: rotateY(180deg);
+}
+.card .cardBack p
+{
+    padding: 10px;
+}
+
+/* ----- responsive ----- */
+@media screen and (max-width: 1100px) 
+{
+    .imgBox
+    {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .fullProjectBox
+    {
+        width: calc(100% - 20px);
+        float: none;
+        margin: 20px 0 0 20px;
+    }
+    .projectBox
+    {
+        width: 100%;
+        height: 410px;
+    }
+    #spacebottom
+    {
+        height: 0px;
+    }
+    #werkwijze
+    {
+        padding: 0;
+    }
+}
+
+/* --- responsive table --- */
+@media screen and (max-width: 830px)
+{
+    section#cijferlijst
+    {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 20px;
+    }
+    section#cijferlijst::-webkit-scrollbar
+    {
+        height: 20px;
+        background-color: #121212;
+        border: 2px solid #121212;
+        border-radius: 20px;
+    }
+    section#cijferlijst::-webkit-scrollbar-thumb
+    {
+        background-color: #242424;
+        border: 3px solid #121212;
+        border-radius: 20px;
+    }
+}
+
+/* ----- TELEFOON PORTRAIT ----- */
+@media screen and (max-width: 750px) 
+{
+    .projectBox
+    {
+        margin-left: -10px;
+    }
+    .project
+    {
+        width: 300px;
+        height: 160px;
+    }
+    .project img
+    {
+        width: 300px;
+        height: 150px;
+    }
+    .clickOverlay
+    {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+        top: -125px;
+    }
+    #werkwijze
+    {
+        flex-direction: column;
+    }
+}
+
+/* ---- iframe responsive ---- */
+@media screen and (max-width: 400px)
+{
+    .iframePopup .iframeBox
+    {  
+        height: 80%;
+        width: calc(90% - 40px);
+    }
+    .iframePopup iframe
+    {  
+        display: none;
+    }
+    .screenToSmall
+    {
+        display: block;
+    }
+    .screenToSmall img
+    {
+        height: 60px;
+        width: 60px;
+    }
+    .screenToSmall span
+    {
+        font-style: italic;
+    }
+    #responsiveMelding
+    {
+        font-size: 12px;
+    }
+    #projectNmb
+    {
+        display: none;
+    }
+    .projectBox
+    {
+        height: 450px;
+    }
+    .project img
+    {
+        width: 300px;
+        height: 170px;
+        margin-top: -20px;
+    }
+    .fullCard
+    {
+        margin: 50px -20px 50px 0;
+        width: 100%
+    }
+    .cardContainer
+    {
+        width: 280px;
+        height: 430px;
+    }
+}
+
+/* ----- TELEFOON LANDSCAPE ----- */
+@media screen and (max-height: 500px)
+{
+    /* opleidingboxen */
+    .contentBox
+    {
+        width: 100%;
+    }
+    .imgBox
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* --- responsive card --- */
+@media screen and (max-width: 360px)
+{
+    .cardContainer
+    {
+        width: 250px;
+        height: 420px;
+    }
+    .card .cardTitle
+    {
+        font-size: 20px;
+    }
+    .card .cardNmb
+    {
+        font-size: 25px;
+    }
+    .card .cardIcon
+    {
+        height: 170px;
+        margin-bottom: 5px;
+    }
+    .card .cardIcon img
+    {
+        height: 150px;
+        margin: 10px;
+    }
+    .card .cardFront p, .card .cardBack p
+    {
+        font-size: 14px;
+    }
+}
+
+/* --- responsive --- */
+@media screen and (max-width: 280px)
+{
+    .screenToSmall span, .screenToSmall p, .boxFoot
+    {
+        display: none;
+    }
+    .cardContainer
+    {
+        width: 95%;
+        height: 550px;
+    }
+}

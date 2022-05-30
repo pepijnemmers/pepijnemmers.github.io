@@ -1,0 +1,111 @@
+/*
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 6-1-2020
+
+    stylesheet hobby's en bijzondere kwaliteiten pagina
+*/
+
+/* --- hobbybox stylen --- */
+h1
+{
+    margin-bottom: 0;
+}
+#openAll:hover, #closeAll:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hobbyBox
+{
+    width: calc(80% - 40px);
+    box-shadow: 0px 0px 15px #121212;
+    padding: 10px 20px;
+    margin: 50px auto;
+}
+/* header van de hobby box stylen */
+.titleBox
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #242424; 
+    cursor: pointer;
+}
+.titleBox:hover h2
+{
+    text-decoration: underline;
+}
+.titleBox:hover .plusSign
+{
+    transform: rotate(360deg);
+}
+.plusSign
+{
+    font-size: 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+/* body van de hobby box stylen */
+.hobbyContent
+{
+    height: auto;
+    overflow: hidden;
+}
+.aboutHobby
+{
+    width: 58%;
+    height: auto;
+    float: left;
+}
+.hobbyImg
+{
+    width: 40%;
+    float: right
+}
+.hobbyImg img
+{
+    width: 400px;
+    height: auto;
+}
+
+/* ----- responsive ----- */
+@media screen and (max-width: 1100px) 
+{
+    .hobbyBox
+    {
+        width: calc(95% - 40px);
+    }
+    .aboutHobby
+    {
+        width: 100%;
+    }
+    .hobbyImg
+    {
+        width: 100%;
+    }
+    .hobbyImg img
+    {
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* ----- responsive ----- */
+@media screen and (max-width: 600px) 
+{
+    .hobbyImg img
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,257 @@
+<!doctype html>
+<!--
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 14-12-2020
+
+    Opleidingen pagina portfolio
+-->
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Pepijn Emmers - Opleidingen
+        </title>
+        <!-- browser icon toevoegen -->
+        <link rel="icon" href="images/icon.png">
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="styles/opleidingen.css">
+        <!-- extern JavaScript koppelen -->
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header onscroll="stickyHeader()" id="header">
+            <!-- Navigatie balk --> 
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" id="brandName">Pepijn Emmers</a>                
+                <!-- hamburger button -->
+                <div onclick="burgerMenu()" id="burgerButton">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+                <div class="navbarLinks" id="burgerMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="opleidingen.html" class="active">Opleidingen</a></li>
+                        <li><a href="werkervaring.html">Werkervaring</a></li>
+                        <li><a href="hobby's-en-bijzondere-kwaliteiten.html">Hobby's &amp; Bijzondere kwaliteiten</a></li>
+                        <li><a href="resultaten.html">Resultaten</a></li>
+                        <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- content -->
+        <main>
+            <h1>Opleidingen</h1>
+            <!-- opleiding 1 -->
+            <section id="wvoc">
+                <div class="contentBox">
+                <p class="time" id="time-wvoc">2016 t/m 2020</p>
+                    <div class="imgBox">
+                        <img src="images/gebouw-wvoc.jpg" id="wvocGebouw" alt="wvoc gebouw">
+                    </div>
+                    <h2>Willem van Oranje College - VMBO-T</h2>
+                    <p>                        
+                        Op het Willem van Oranje college heb ik in 4 jaar mijn VMBO-T diploma gehaald.
+                    </p>
+
+                    <h3>Ervaring</h3>
+                    <p>
+                        Ik vond het Willem van Oranje college een fijne school om mijn vmbo-t diploma te halen.<br>
+                        Er werd goed gekeken naar het niveau dat je aankon en er was veel keuze om je te verdiepen in bepaalde keuzevakken. Ook vond ik dat er fijne docenten waren die goede uitleg gaven en goede teamleiders (een soort directeur voor een niveau/klas) waarbij je altijd terecht kon als er iets was.<br>
+                        Ik ben blij dat ik op die school heb gezeten en ondanks het coronavirus heb ik het mooi af kunnen sluiten. 
+                    </p>
+
+                    <h3>Gegevens</h3>
+                    <p>
+                        De gaard 4 5146 AW Waalwijk<br>
+                        0416-333069<br>
+                        <a href="https://www.het-willem.nl/" target="_blank" class="openSiteButton">www.het-willem.nl</a>   
+                    </p>
+                </div>
+            </section>
+            <!-- opleiding 2 -->
+            <section id="kw1c">
+                <div class="contentBox">
+                    <p class="time" id="time-kw1c">2020 t/m heden</p>
+                    <div class="imgBox">
+                        <img src="images/kw1c-onderwijs%20boulevard.jpg" id="kw1cGebouw" alt="kw1c gebouw">
+                    </div>
+                    <h2>Koning Willem I College - Software Development</h2>
+                    <p>                        
+                        Ik volg de opleiding Software developer (niveau 4) en wil in 3 jaar mijn diploma behalen.
+                    </p>
+
+                    <h3>Ervaring</h3>
+                    <p>
+                        Ik heb het tot zo ver goed naar mijn zin op het Koning Willem I College.<br>
+                        De opleiding bevalt me goed. Ik vind de uitleg duidelijk en er is goede balans tussen praktijk en theorie. Ook vind ik het goed dat alle vakken iedere periode samen komen in een projectopdracht.
+                        Het is fijn dat ik altijd bij mijn mentor terecht kan als dat nodig is. De opleiding duurt normaal 4 jaar, maar ik hoop dat ik hem in 3 jaar kan afronden. 
+                    </p>
+
+                    <h3>Gegevens</h3>
+                    <p>
+                        Onderwijsboulevard 3 5223 DE ’s-Hertogenbosch<br>
+                        073 624 9 444<br>
+                        <a href="https://www.kw1c.nl/" target="_blank" class="openSiteButton">www.kw1c.nl</a>   
+                    </p>
+                </div>
+            </section>
+            
+            <!-- oefeningen -->
+            <section id="oefeningen">
+                <h2>De 4 oefeningen waar ik het meest trots op ben</h2> 
+                <!-- oefening 1 -->
+                <div class="fullOpdrBox">
+                    <div class="opdrBox">
+                        <div class="opdr" onclick="openIframe1()">
+                            <img src="images/oefening%203.4.jpg" alt="T1 oefening 3.4">
+                            <div class="clickOverlay">
+                                Click me!
+                            </div>
+                        </div>
+                        <div class="opdrTekst">
+                            <h3>Periode 1 - Oefening 3.4</h3>
+                            <p>
+                                Dit was een oefening waarbij veel CSS gebruikt moest worden en op dat moment was het een erg lastige opdracht. Ik heb bij deze opdracht geleerd hoe en wanneer ik de juiste selectoren gebruik.<br>
+                                <span class="datum">29-09-2020</span> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- oefening 2 -->
+                <div class="fullOpdrBox">
+                    <div class="opdrBox">
+                        <div class="opdr" onclick="openIframe2()">
+                            <img src="images/oefening%204.5.jpg" alt="T1 oefening 4.5">
+                            <div class="clickOverlay">
+                                Click me!
+                            </div>
+                        </div>
+                        <div class="opdrTekst">
+                            <h3>Periode 1 - Oefening 4.5</h3>
+                            <p>
+                                Bij deze oefening moesten we javascript gebruiken en daar waren we die week voor het eerst mee begonnen. In deze oefening kwam alles samen en dat was dus mijn eerste echte oefening met javascript. Ik heb hier dus een simpele basis van javascript geleerd<br>
+                                <span class="datum">15-10-2020</span> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- oefening 3 -->
+                <div class="fullOpdrBox">
+                    <div class="opdrBox">
+                        <div class="opdr" onclick="openIframe3()">
+                            <img src="images/oefening%20T2%203.1.jpg" alt="T2 oefening 3.1">
+                            <div class="clickOverlay">
+                                Click me!
+                            </div>
+                        </div>
+                        <div class="opdrTekst">
+                            <h3>Periode 2 - Oefening 3.1</h3>
+                            <p>
+                                Dit was een oefening waarbij we een website responsive moesten maken. Dat was voor het eerst dat we dat deden en ik had het snel te pakken. Ik ben dan ook blij met het resultaat en heb snel geleerd hoe responsive werkt.<br>
+                                <span class="datum">10-12-2020</span> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- oefening 4 -->
+                <div class="fullOpdrBox">
+                    <div class="opdrBox">
+                        <div class="opdr" onclick="openIframe4()">
+                            <img src="images/oefening%20T2%204.1.jpg" alt="T2 oefening 4.1">
+                            <div class="clickOverlay">
+                                Click me!
+                            </div>
+                        </div>
+                        <div class="opdrTekst">
+                            <h3>Periode 2 - Oefening 4.1</h3>
+                            <p>
+                                Bij deze oefening moesten we een tabel maken en style geven. Dat was veel werk en ik wist nog niet super goed hoe dat werkte, maar na iets langer dan een half uur bezig te zijn heb ik er iets moois van kunnen maken. Hier heb ik geleerd hoe ik een tabel maak en style geef.<br>
+                                <span class="datum">16-12-2020</span> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- iframe pop up -->
+                <div class="iframePopup">
+                    <div  class="iframeBox">
+                        <div class="boxHead">
+                            <h2 id="opdrNmb"></h2>
+                            <span class="closeIframe" onclick="closeIframe()">&times;</span>
+                        </div> 
+                        <div class="boxBody">
+                            <iframe src="#" id="opdrIframe"></iframe>
+                            <div class="screenToSmall">
+                                <h3>Sorry, op uw scherm werkt het iframe niet goed.</h3>
+                                <img src="images/smiley_sip.png" alt="verdrietige-smiley.png">
+                                <p>
+                                <span>Wilt u toch de website bekijken?</span><br>
+                                Klik hier onder op nieuw tabblad of gebruik een apparaat met een groter scherm.<br><br>
+                                <span id="responsiveMelding">De site kan minder goed werken op een telefoon.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="boxFoot">
+                            <a href="#" target="_blank" id="openNewtab">Open in nieuw tabblad</a> 
+                        </div>
+                    </div>
+                </div>
+            </section>    
+        </main>
+        
+        <!-- Footer desktop -->
+        <footer id="footerDesktop">
+            <p>
+                &copy;Pepijn Emmers 
+            </p>
+            <div class="backToTop">
+                <i class="demo-icon" onclick="backToTop()" title="back to top">&#xe4a3;</i>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+        </footer>
+        <!-- Footer mobile -->
+        <footer id="footerMobile">
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/pepijn-emmers" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/pepijn_emmers8/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://www.facebook.com/pepijn.emmers/" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook-rect">&#xf301;</i>
+                </a>
+            </div>
+            <div id="contactFooter">
+                <a href="contact.html">
+                    <button class="contactButton" title="Contactpagina">Contact</button>
+                </a>
+            </div>
+            <p onclick="backToTop()" title="back to top">
+                &copy;Pepijn Emmers
+            </p>
+        </footer>
+    </body>
+</html>

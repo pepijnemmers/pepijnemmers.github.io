@@ -1,0 +1,457 @@
+/*
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 3-1-2021
+
+    opleidingen pagina portfolio
+*/
+
+/* --- jaarbalk links --- */
+.contentBox
+{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    
+    border-left: 3px solid #ffee00;
+    padding: 10px 0 10px 25px;
+    margin: 0 0 80px 10px;
+    position: relative;
+    z-index: 1;
+}
+.time
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    z-index: -1;
+    width: 130px;
+    height: 30px;
+    transform: rotateZ(-90deg);
+    padding: 0 10px;
+    
+    color: #000;
+    font-weight: bold;
+    background-color: #ffee00;
+    box-shadow: 0 0 12px rgba(18, 18, 18, 0.5),
+                0 0 14px rgba(18, 18, 18, 0.5),
+                inset 0 0 10px rgba(255, 190, 13, 0.4);
+}
+#time-wvoc
+{
+    left: -76px;
+    top: 83px;
+    animation: timeUp1 1s forwards;
+}
+#time-kw1c
+{
+    left: -76px;
+    top: 93px;
+    animation: timeUp2 1s forwards;
+}
+@keyframes timeUp1
+{
+    from{
+        top: 400px;
+    }
+    to{
+        top: 83px;
+    }
+}
+@keyframes timeUp2
+{
+    from{
+        top: 400px;
+    }
+    to{
+        top: 93px;
+    }
+}
+
+/* --- teksten stylen --- */
+#wvoc, #kw1c
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+h1::first-letter
+{
+    font-size: 1.15em;
+}
+main h2, main h3, main p
+{
+    width: 90%;
+}
+h2, h3
+{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2 + p
+{
+    font-style: italic;
+}
+
+/* ---- scholen afbeeldingen ---- */
+.imgBox
+{
+    width: 35%;
+    margin: 0 50px;
+    float: right;
+}
+#wvocGebouw, #kw1cGebouw
+{
+    width: 100%;
+    height: auto;
+    border: 1px solid #242424;
+}
+#kw1cGebouw
+{
+    margin-top: 25px;
+}
+#wvocGebouw
+{
+    margin-top: 14px;
+}
+
+/* --- knop voor site openen --- */
+.openSiteButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    
+    background-color: #ffee00;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.openSiteButton:hover
+{
+    text-decoration: underline;
+}
+
+/* ---- OEFENINGEN ---- */
+#oefeningen
+{    
+    display: block;
+    width: 100%;
+    height: 950px;
+}
+#oefeningen h2
+{
+    text-decoration: underline;
+}
+.fullOpdrBox
+{
+    width: calc(50% - 20px);
+    margin: 20px 0 0 20px;
+    float: left;
+}
+.opdrBox
+{
+    width: 503px;
+    height: 410px;
+    background-color: #242424;
+}
+.opdr
+{
+    width: 500px;
+    height: 250px;
+    position: relative;
+}
+.opdr img
+{
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #121212;
+    opacity: 0.8;
+}
+.opdr:hover img
+{
+    opacity: 1;
+}
+.opdr:hover .clickOverlay
+{
+    background-color: #ffbe0d;
+}
+.clickOverlay
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -180px;
+    left: 50%;
+    transform: translate(-50%);
+    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    color: #000;
+    background-color: #ffee00;
+    cursor: pointer;
+}
+.opdrTekst
+{
+    color: #fff;
+    width: 100%;
+    margin: 0;
+}
+.opdrTekst h3
+{
+    text-decoration: underline;
+}
+.opdrTekst h3, .opdrTekst p
+{
+    margin: 5px 0;
+    padding-left: 5px;
+    text-align: start;
+}
+.opdrTekst span.datum
+{
+    font-style: italic;
+    font-size: 0.9em;
+    text-decoration: overline;
+    float: right;
+    margin-right: 10px;
+}
+
+/* --- iframe style --- */
+.iframePopup
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s linear;
+}
+.iframePopup .iframeBox
+{  
+    height: 90%;
+    width: calc(85% - 40px);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    
+    background-color: #242424;
+    border: 1px solid #121212;
+    box-shadow: 5px  5px  5px #121212, inset 0px  0px  5px #121212;  
+}
+.iframePopup .boxHead
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iframePopup .closeIframe
+{
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 40px;
+    margin: 0 1px;
+    cursor: pointer;
+}
+.iframePopup  .boxBody
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframePopup .boxBody iframe
+{
+    width: 90%;
+    height: 80%;
+    margin-top: 30px;
+    border: 2px solid #121212;
+    box-shadow: 0px 0px 5px #121212;
+    background-color: #fff;
+}
+.screenToSmall
+{
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+.iframePopup .boxFoot
+{
+    float: right;
+    margin: -45px 20px 0 0;
+}
+.iframePopup .boxFoot a
+{
+    color: #fff;
+}
+
+/* ----- responsive ----- */
+@media screen and (max-width: 1100px) 
+{
+    .contentBox
+    {
+        width: 100%;
+    }
+    .imgBox
+    {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    #wvocGebouw, #kw1cGebouw
+    {
+        width: 100%;
+        height: auto;
+        border: 1px solid #242424;
+    }
+    #oefeningen
+    {    
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .fullOpdrBox
+    {
+        width: calc(100% - 20px);
+        float: none;
+        margin: 20px 0 0 20px;
+    }
+    .opdrBox
+    {
+        width: 100%;
+        height: 410px;
+    }
+}
+
+/* ----- TELEFOON PORTRAIT ----- */
+@media screen and (max-width: 750px) 
+{
+    .opdrBox
+    {
+        width: 100%;
+        height: 410px;
+        margin-left: -10px;
+    }
+    .opdr
+    {
+        width: 300px;
+        height: 150px;
+    }
+    .opdr img
+    {
+        width: 300px;
+        height: 150px;
+    }
+    .clickOverlay
+    {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+        top: -125px;
+    }
+}
+
+/* ---- iframe responsive ---- */
+@media screen and (max-width: 400px)
+{
+    .iframePopup .iframeBox
+    {  
+        height: 80%;
+        width: calc(90% - 40px);
+    }
+    .iframePopup iframe
+    {  
+        display: none;
+    }
+    .screenToSmall
+    {
+        display: block;
+    }
+    .screenToSmall img
+    {
+        height: 60px;
+        width: 60px;
+    }
+    .screenToSmall span
+    {
+        font-style: italic;
+    }
+    #responsiveMelding
+    {
+        font-size: 12px;
+    }
+    #opdrNmb
+    {
+        display: none;
+    }
+}
+
+/* ----- TELEFOON PORTRAIT ----- */
+@media screen and (max-width: 370px) 
+{
+    .opdrBox
+    {
+        height: 450px;
+    }
+    .opdr img
+    {
+        width: 250px;
+        height: 150px;
+        margin-top: -20px;
+    }
+    .clickOverlay
+    {
+        top: -125px;
+        left: 42%;  
+        transform: translate(-50%);
+    }
+}
+
+/* ----- TELEFOON LANDSCAPE ----- */
+@media screen and (max-height: 500px)
+{
+    /* opleidingboxen */
+    .contentBox
+    {
+        width: 100%;
+    }
+    .imgBox
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .iframePopup .boxBody iframe
+    {
+        width: 90%;
+        height: 60%;
+    }
+}
+/* --- responsive --- */
+@media screen and (max-width: 280px)
+{
+    .screenToSmall span, .screenToSmall p, .boxFoot
+    {
+        display: none;
+    }
+}

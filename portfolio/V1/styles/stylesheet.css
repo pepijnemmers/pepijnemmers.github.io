@@ -1,0 +1,485 @@
+/*
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 14-12-2020
+
+    css voor navigatie & standaard layout portfolio website
+*/
+
+/* ---- FONTS TOEVOEGEN ---- */
+@font-face
+{
+    font-family: 'poppins';
+    src: url(../fonts/Poppins/Poppins-Light.ttf)
+}
+@font-face
+{
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Black.ttf)
+}
+@font-face
+{
+    font-family: 'PatrickHand';
+    src: url(../fonts/Patrick_Hand/PatrickHand-Regular.ttf)
+}
+@font-face
+{
+    font-family: 'icons';
+    src: url("../fonts/icon-font/fontello.ttf");
+}
+/* --- icon font stylen --- */
+.demo-icon
+{
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120%;
+} 
+
+/* ---- STYLE GEVEN AAN DE BODY ---- */
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    background-color: #242424;
+    color: #fff;
+
+    background-image: url(../images/backgroundHexagons.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+    min-height: 100vh;
+}
+
+/* ---- fade in animatie van main ---- */
+@keyframes fadein 
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox */
+@-moz-keyframes fadein 
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera */
+@-webkit-keyframes fadein 
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein 
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+main 
+{
+    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera */
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -ms-animation: fadein 1.5s; /* Internet Explorer */
+    animation: fadein 1.5s;
+    padding: 20px;
+}
+
+/* ---- HEADER STYLEN ---- */
+header
+{
+    transition: all .5s linear;   
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.navbar
+{ 
+    display: flex;  /* logo en nav naast elkaar zetten */
+    justify-content: space-between; /* ruimte tussen logo en nav geven */
+    align-items: center; /* tekst in midden zetten (tussen boven/onder) */ 
+}
+#brandName
+{
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ffee00; 
+    
+    font-size: 1.5em;
+    color: #ffee00;
+    text-decoration: none;
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+}
+#brandName:hover
+{
+    color: #ffbe0d;
+    border: 1px solid #ffbe0d;
+}
+
+/* ---- navigatie menu style ----*/
+.navbarLinks, #burgerMenu
+{
+    display: block;
+}
+.navbarLinks ul
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbarLinks li
+{
+    list-style: none;
+}
+.navbarLinks li a
+{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+#burgerButton
+{
+    display: none;
+}
+
+/* ---- font-family's en font-size's instellen ---- */
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    text-decoration: underline;
+}
+h2
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+h3
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+p
+{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.grandientColor
+{
+    background: linear-gradient(to right, #ffbe0d, #ffee00, #fff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button
+{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    background-color: #ffee00;
+    border: 1px solid #121212;
+    cursor: pointer;
+    outline: none;
+}
+button:hover
+{
+    background-color: #ffbe0d;
+    text-decoration: underline;
+}
+
+/* ---- FOOTER STYLEN ---- */
+footer
+{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #121212;
+    background-color: rgba(16, 16, 16, 0.3);
+}
+.backToTop
+{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backToTop i
+{
+    font-size: 250%;
+    color: #ffee00;
+    cursor: pointer;
+}
+footer .socialMedia a
+{
+    float: left;
+    font-size: 140%;
+    margin: 0 20px;
+    color: #ffee00;
+    text-decoration: none;
+}
+footer .socialMedia a:hover, .backToTop i:hover
+{
+    color: #ffbe0d;
+}
+.icon-instagram
+{
+    font-size: 145%;
+}
+footer .contactButton
+{
+    height: 28px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+}
+
+/* ---- FOOTER DESKTOP STYLEN ---- */
+#footerDesktop 
+{
+    display: block;
+}
+#footerDesktop p
+{
+    float: left;
+    padding-left: 10px;
+}
+#footerDesktop p:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#footerDesktop .backToTop i
+{
+    font-size: 180%;
+}
+#footerDesktop .socialMedia
+{
+    float: right;
+}
+
+/* ---- FOOTER MOBILE STYLEN ---- */
+#footerMobile
+{
+    display: none;
+    height: 163px;
+}
+#footerMobile p:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ---- underline geven met animatie op DESKTOP ---- */
+@media screen and (min-width: 1340px)
+{
+    .active::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #fff;
+    }
+    nav ul li a::after {
+        content: '';
+        width: 0;
+        height: 1px;
+        display: block;
+        background: #fff;
+        transition: .2s ease;
+    }
+    .navbarLinks li a:hover::after {
+        width: 100%;
+    }
+}
+
+/* ----- TELEFOON PORTRAIT ----- */
+@media screen and (max-width: 1340px) 
+{
+    .navbar
+    {
+        flex-direction: column; /* onder elkaar zetten */
+        align-items: flex-start; /* aan begin zetten */
+        z-index: 999;
+    }
+    #brandName
+    {
+        font-size: 1.5em; /* tenopzichte van eerder gegeven grootte */
+        margin: 15px;
+    }
+    /* ----- HAMBURGER BUTTON ----- */
+    #burgerButton
+    {
+        width: 40px;
+        height: 35px;
+        margin: 30px 0 20px 30px;
+        display: block;
+        cursor: pointer;
+        
+        position: absolute;
+        right: 15px;
+        top: 7px;
+    }
+    #line1, #line2, #line3
+    {
+        height: 5px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        border-radius: 5px;
+        transition: .5s ease;
+    }
+    /* lijnen onder elkaar zetten */
+    #line1
+    {
+        transform: translateY(-6px);
+    }
+    #line3
+    {
+        transform: translateY(6px);
+    }
+    /* ---- navigatie ---- */
+    #burgerMenu
+    {
+        display: none;
+        width: 100%;
+    }
+    .navbarLinks
+    {
+        width: 100%;
+        background-color: #242424;
+        z-index: 999;
+    }
+    .navbarLinks ul
+    {
+        background-color: #242424;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: 10px 10px 10px rgba(16, 16, 16, 0.5);
+        animation: fadein 2s;
+    }    
+    .navbarLinks li
+    {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    /* --- animation menu slide down --- */
+    .navbarLinks li
+    {
+        animation: menuSlide 1s forwards;
+        bottom: 500px;
+    }
+    .navbarLinks li:first-of-type + li + li + li + li + li
+    {
+      animation-delay: 0ms;
+    }
+    .navbarLinks li:first-of-type + li + li + li + li
+    {
+      animation-delay: 100ms;
+    }
+    .navbarLinks li:first-of-type + li + li + li
+    {
+      animation-delay: 200ms;
+    }
+    .navbarLinks li:first-of-type + li + li 
+    {
+      animation-delay: 300ms;
+    }
+    .navbarLinks li:first-of-type + li 
+    {
+      animation-delay: 400ms;
+    }
+    .navbarLinks li:first-of-type
+    {
+      animation-delay: 500ms;
+    }
+    @keyframes menuSlide 
+    {
+        to {
+            bottom: 0;
+        }
+    }
+}
+
+/* verplaats back to top */
+@media screen and (max-width: 745px)
+{
+    .backToTop
+    {
+        left: 180px;
+    }
+}
+
+/* ---- TELEFOON FOOTER ---- */
+@media screen and (max-width: 550px)
+{
+    #footerDesktop
+    {
+        display: none;
+    }
+    #footerMobile
+    {
+        display: block;
+    }
+    .socialMedia
+    {
+        text-align: center;
+        width: 200px;
+        height: 70px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #contactFooter
+    {
+        float: left;
+        width: 50%;
+    }
+    #footerMobile p
+    {
+        width: 50%;
+        float: right;
+    }
+    p#contactpageCopyright
+    {
+        width: 100%;
+    }
+}
+
+/* ----- TELEFOON LANDSCAPE ----- */
+@media screen and (max-height: 500px)
+{
+    /*---- NAVIGATIE ----*/
+    .navbarLinks
+    {
+        box-shadow: 10px 10px 10px rgba(16, 16, 16, 0.5);
+    }
+    .navbarLinks ul
+    {
+        display: block;
+    }    
+    .navbarLinks li
+    {
+        width: 50%;
+        float: left;
+    }
+}
+
+/* --- hamburger verplaatsen als scherm te klein is --- */
+@media screen and (max-width: 340px)
+{
+    #burgerButton
+    {
+        position: relative;
+        left: 20px;
+        margin: 0;
+    }
+}

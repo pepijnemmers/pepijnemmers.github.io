@@ -1,0 +1,461 @@
+/*
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 21-11-2020
+
+    T2 Praktijk opdracht
+*/
+/* font families toevoegen */
+@font-face
+{
+    font-family: 'icons';
+    src: url("../fonts/icon-font/fontello.ttf");
+}
+@font-face
+{
+    font-family: 'roboto';
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+}
+@font-face
+{
+    font-family: 'Sintony';
+    src: url("../fonts/Sintony-Bold.ttf")
+}
+/* icon class een style geven */
+.demo-icon
+{
+    font-family: 'icons';
+    /* icontjes niet meer cursief */
+    font-style: normal;
+    /* icontjes niet meer dikdrukken */
+    font-weight: normal;
+    /* grootte aanpassen door */
+    font-size: 120%;
+} 
+/* body een style geven */
+body
+{
+    font-family: sans-serif;
+    margin: 0px;
+}
+/* alle h2 element style geven */ 
+h2
+{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+}
+/* alle p element style geven */ 
+p
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* de div voor het logo een maat en positie geven */
+.logo
+{
+    height: 90px;
+    width: 130px;
+    float: left;
+}
+.logo img
+{
+    height: 90px;
+    background-color: #fff;
+    padding: 0px 20px;
+}
+/* background-color donker rood op class toepassen */
+.bgDarkRed
+{
+    background-color: #cc2200;
+    width: 100%;
+    height: 40px;
+}
+/* background-color licht rood op class toepassen */
+.bgLightRed
+{
+    background-color: #ff3300;
+    width: 100%;
+    height: 50px;
+}
+/* bovenste menubalk style geven */
+#menu2
+{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+/* onderste menubalk style geven */
+#menu1
+{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+/* ul positie geven en list-style aanpassen */
+#menu2, #menu1 
+{
+    list-style: none;
+    margin: 0px -200px;
+    display: block;
+    text-align: center;
+    
+    font-family: sans-serif;
+    font-size: 16px;
+}
+/* li positie geven */
+#menu2 li, #menu1 li
+{
+    display: inline;
+    padding: 10px 10px;
+    line-height: 25px;
+}
+/* style geven aan a element */ 
+#menu1 a, #menu2 a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 16.5px;
+}
+/* hover effect toevoegen aan navigatie menu */
+#menu2 a:hover
+{
+    color: #cc2200;
+    background-color: #fff;
+    padding-bottom: 12px;
+}
+/* hover effect toevoegen aan navigatie menu */
+#menu1 a:hover
+{
+    color: #ff3300;
+    background-color: #fff;
+    padding-bottom: 16.5px;
+}
+/* knop met 'portaal' een positie geven (op basis van %/em) */
+#portaalKnop
+{
+    top: 0.5em;
+    right: 2.5em;
+}
+/* knop met 'zoeken' een positie geven d.m.v. em (2x font-size) */
+#zoekKnop
+{
+    top: 3.6em;
+    right: 2.5em;
+}
+/* class een style en positie geven */
+.topLink
+{
+    position: absolute;
+    /* Positie geven d.m.v em (2x font-size) */
+    right: 0.6em; 
+    font-size: 0.9em; 
+    line-height: 1.6em;
+    padding: 0em 0.5em;
+    
+    text-decoration: none;
+    color: #fff;
+    background-color: #0934B3;
+}
+/* engels vlag style en positie geven */
+#imgForeign
+{
+    position: absolute;
+    top: 3.15em;
+    right: 8.7em;
+    height: 1.6em;
+    border: 1px solid #000;
+}
+/* hover effect toepassen */
+#imgForeign:hover
+{
+    height: 1.7em;
+}
+/* hover effect toepassen */
+.topLink:hover
+{
+    text-decoration: underline;
+}
+#plattegrond
+{
+    width: 100%;
+    height: auto;
+}
+/* contact button positie en style geven */
+#contactButton
+{
+    background-image: url(../images/contact-button-vertical.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    cursor: pointer;
+    
+    height: 190px;
+    width: 50px;
+    
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    
+    right: 0px;
+    top: 140px;
+    position: fixed;
+}
+/* hover effect toepassen */
+#contactButton:hover
+{
+    opacity: 0.8;
+}
+#formTitle
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+/* de input elementen selecteren */
+input, select, textarea
+{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid grey;
+    box-sizing: border-box;  /* Zorgen dat padding en width zelfde blijven */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none; /* zorgen dat tekstblok niet versteld kan worden */
+}
+/* tekst vak voor gebruikersvraag vaste hoogte/breedte geven */
+textarea
+{
+    height: 160px;
+    width: 100%;
+}
+/* de verstuur knop style geven */
+#submit
+{
+    background-color: #0934B3;
+    color: #fff;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+/* hover effect toepassen op Versturen knop */
+#submit:hover
+{
+    border: 1px solid #000;
+}
+/* de pop up */
+.popUp
+{
+    display: none; /* verbergen als pagina normaal is */
+    position: fixed; /* op één vaste plek zetten */
+    z-index: 1; /* zorgt dat pop up op bovenste laag is */
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0,0, 0.8); /* zorgt dat achter de pop up zwart word met opacity van 0.8 */ 
+}
+/* pop up content */
+#popUpContent
+{
+    background-color: #fff;
+    color: #000;
+    margin: 5% auto;
+    padding: 20px;
+    border: 2px solid #000;
+    width: 80%;
+}
+/* kruisje voor sluiten */
+.close
+{
+    color: #888;
+    float: right;
+    font-size: 50px;
+}
+/* hover en focus effect op kruisje */
+.close:hover, .close:focus
+{
+    color: #000;
+    cursor: pointer;
+}
+/* titel opleidingen maat, positie en style geven */
+#opleidingTitel
+{
+    width: 70%;
+    height: auto;
+    
+    text-align: center;
+    margin: 0px auto;
+    padding: 5px 0px;
+    
+    background-color: #cc2200;
+    color: #fff;
+}
+/* div opleidingen positie en style geven */
+#opleidingen
+{
+    text-align: left;
+    width: 70%;
+    margin: 0px auto;
+    background-color: #cc2200;
+}
+/* a element in de div style en positie geven */ 
+#opleidingen a
+{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+/* class een maat, positie en style geven */
+.opleiding
+{
+    width: 90%;
+    height: 50px; 
+    margin: 0px auto;
+    background-color: #ff3300;
+}
+/* hover effect toepassen */
+.opleiding:hover
+{
+    text-decoration: underline;
+    color: #ff3300;
+    background-color: #fff;
+}
+/* span een positie geven */
+.opleiding span
+{
+    padding: 0px 10px;
+    line-height: 50px;
+}
+/* span een style en positie geven */
+.moveToPage
+{
+    float: right;
+    font-size: 50px;
+}
+/* ruimte geven onderaan de opleidingen */
+#lastEdu
+{
+    margin-bottom: 20px;
+}
+/* de div positie en style geven */
+.content
+{
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    background-color: #ff3300;
+}
+/* h2 in content een style en positie geven */
+.content h2
+{
+    background-color: #cc2200;
+    color: #fff;
+    padding: 10px;
+}
+/* h3 in content een style en positie geven */
+.content h3
+{
+    color: #fff; 
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+/* h4 in content een style en positie geven */
+.content h4
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic; 
+    margin: 20px;
+}
+/* de p in content div padding geven */
+.content p
+{
+    padding: 0px 20px;
+    height: auto;
+}
+/* afbeelding een maat en positie geven */
+#maakKennisMet
+{
+    height: 400px;
+    margin-right: 40px;
+    float: right;
+}
+/* margin bottom geven aan p */
+#bottom
+{
+    margin-bottom: 200px;
+}
+
+/* afbeelding een maat geven */
+#tekenmoment
+{
+    width: 800px;
+    height: auto;
+}
+/* afbeelding een maat en positie geven */
+#mondkapjesplicht
+{
+    height: 250px;
+    width: 250px;
+    float: right;
+}
+/* afbeelding een maat en positie geven */
+#rookvrijeSchool
+{
+    height: 100px;
+    margin-left: 20px;
+}
+/* iframe een maat en style geven */
+#iframeVid
+{
+    width: 640px;
+    height: 360px;
+    border: none;
+}
+/* class dikdrukken */
+.bold
+{
+    font-weight: bold;
+}
+/* footer style en maat geven */
+footer
+{
+    height: 120px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #ff3300;
+}
+/* div social media style en maat geven */
+#socialMedia
+{
+    height: 90px;
+    background-color: #ff3300;
+    margin-right: 50px;
+}
+/* a element in socialmedia div style en positie geven  */
+#socialMedia a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 140%;
+    float: right;
+    margin: 10px;
+}
+/* hover effect toepassen */
+#socialMedia a:hover
+{
+    opacity: 0.8;
+}
+/* div copyright style en maat geven */
+#copyright
+{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #cc2200;
+    color: #000;
+    font-style: italic;
+}

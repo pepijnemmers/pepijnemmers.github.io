@@ -1,0 +1,393 @@
+<!doctype html>
+<!--
+    Auteur: Pepijn Emmers 
+    Aanmaakdatum: 21-11-2020
+
+    T2 Praktijk opdracht
+-->
+<html>
+    <head>
+        <!-- Opgeven van een titel -->
+        <title>
+            Koning Willem I College
+        </title>
+        <!-- Tekenset declareren -->
+        <meta charset="UTF-8">
+        <!-- Viewport declareren -->
+        <meta name="vieuwport" content="width=device-width, initial-scale=1.0">
+        <!-- icon invoegen titel balk -->   
+        <link rel="icon" href="images/logo-kw1c-small.jpg">
+        <!-- extern CSS bestand koppelen-->
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <!-- extern JavaScript koppelen -->
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <!-- Logo invoegen -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/full-logo-kw1c.jpg" alt="logo"> 
+                </a>
+            </div>
+            <!-- navigation -->
+            <nav>
+                <!-- bovenste navigatiemenu -->
+                <div class="bgDarkRed">
+                    <ul id="menu2">
+                        <li>
+                            <a href="nieuws.html">Nieuws</a>
+                        </li>
+                        <li>
+                            <a href="bedrijvenenrelaties.html">Bedrijven &#38; relaties</a>
+                        </li>
+                        <li>
+                            <a href="werkenbijhetcollege.html">Werken bij het college</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- onderste navigatiemenu -->
+                <div class="bgLightRed">
+                    <ul id="menu1">
+                        <li>
+                            <a href="index.html">Home</a>     
+                        </li>
+                        <li>
+                            <a href="opleidingen.html">Opleidingen</a>
+                        </li>
+                        <li>
+                            <a href="activiteiten.html">Activiteiten</a>
+                        </li>
+                        <li>
+                            <a href="studenteninfo.html">Studenteninfo</a>
+                        </li>
+                        <li>
+                            <a href="overons.html">Over ons</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="portaal.html" title="Leerlingen portaal" id="portaalKnop" class="topLink bgBlauw">
+                <i class="demo-icon icon-lock">&#xe80b;</i>&nbsp; Portaal
+            </a>
+            <a href="zoeken.html" title="Zoek een opleiding of onderwerp" id="zoekKnop" class="topLink bgBlauw"class="searchButton">
+                <i class="demo-icon icon-search-1">&#xe80d;</i>&nbsp; Zoeken
+            </a>          
+            <a href="../Website/foreignvisitors.html" title="information for foreign visitors">
+                <img src="images/Engelse-vlag.svg" alt="Information for foreign visitors" id="imgForeign">
+            </a>
+        </header>
+        <!-- Plattegrond afbeelding invoegen -->
+        <div>
+            <img src="images/kw1c-plattegrond.png" id="plattegrond" title="Plattegrond kw1c" alt="Plattegrond kw1c">
+        </div>
+        <!-- pop up trigger button -->
+        <button id="contactButton"></button>
+        <!-- pop up window -->
+        <div id="contactPopUp" class="popUp">
+            <!-- pop up content -->
+            <div id="popUpContent">
+                <!-- kruisje voor sluiten invoegen -->
+                <span class="close">&times;</span>
+                <!-- vragenlijst contact -->
+                <div class="form">
+                    <p><span id="formTitle">Stel je vraag</span></p>
+                    <!-- vragen input voornaam -->
+                    <label>Voornaam</label>
+                    <input type="text" id="fname" placeholder="Uw voornaam..">
+                    <label>Achternaam</label>
+                    <!-- vragen input achternaam -->
+                    <input type="text" id="lname" placeholder="Uw achternaam..">
+                    <!-- vragen input met keuze -->
+                    <label>Onderwerp</label>
+                    <select id="onderwerp">
+                      <option>Kies een onderwerp..</option>
+                      <option value="Aanmelden">Aanmelden</option>
+                      <option value="Portaal">Portaal</option>
+                      <option value="Opleiding">Opleiding</option>
+                      <option value="ICT-gerelateerd">ICT-gerelateerd</option>
+                      <option value="Kosten">Kosten</option>
+                      <option value="Werken bij het college">Werken bij het college</option>
+                      <option value="Verzuim">Verzuim</option>
+                      <option value="(online) lessen">(Online) lessen</option>
+                      <option value="Anders...">Anders...</option>
+                    </select>
+                    <!-- input voor gebruikersvraag-->
+                    <label>Je vraag</label>
+                    <textarea placeholder="Typ hier je vraag.."></textarea>
+                    <button id="submit">Versturen</button>
+                </div>
+            </div>
+        </div>
+        <!-- opleiding domeinen navigatie -->
+        <nav>
+            <div id="opleidingTitel">
+                <h2>Ik zoek een opleiding in ...</h2>
+            </div>
+            <div id="opleidingen">
+                <a href="economie.html">
+                    <div class="opleiding">
+                        <span>Economie</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+                <a href="techniek.html">
+                    <div class="opleiding">
+                        <span>Techniek</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+                <a href="zorgwelzijnsport.html">
+                    <div class="opleiding">
+                        <span>Zorg &amp; Welzijn en Sport</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+                <a href="creatief.html">    
+                    <div class="opleiding">
+                        <span>Creatief</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+                <a href="horecatoerisme.html">
+                    <div class="opleiding">
+                        <span>Horeca &amp; Toerisme</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+                <a href="ordeveiligheid.html">
+                    <div class="opleiding">
+                        <span>Orde &amp; Veiligheid</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+                <a href="entree.html">
+                    <div class="opleiding">
+                        <span>Entree</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+                <a href="vavoeducatie.html">
+                    <div class="opleiding" id="lastEdu">
+                        <span>Vavo en Educatie</span>
+                        <span class="moveToPage"> &gt; </span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <div class="content">
+            <h2>
+                ONLINE INFORMATIEAVOND 2 DECEMBER
+            </h2>
+            <p>
+                Wil je kennismaken met het Koning Willem I College? Dat kan! Op woensdag 2 december 2020 hebben wij een online informatieavond. In maximaal 3 rondes kun je een voorlichtingsronde volgen bij de opleiding(en) van jouw keuze.
+            </p>
+            <p>
+                De rondes zijn op de volgende tijden:
+            </p>
+            <p>
+                Ronde 1: 17.30 – 18.10 uur<br>
+                Ronde 2: 18.20 – 19.00 uur<br>
+                Ronde 3: 19.10 – 19.50 uur<br>
+            </p>
+            <p>
+                Je kunt je <a href="inschrijven.html">hier</a> aanmelden voor de Informatieavond. Op deze site vind je ook meer informatie over de voorlichtingen.
+            </p>
+            <p>
+                Je kunt deze avond kiezen uit meer dan honderd verschillende voorlichtingen over onze opleidingen. Ook kun je een brede presentatie volgen over onze domeinen, topsport en studeren, informatie over hulpvragen en ondersteuningsmogelijkheden, en hoe vind ik werk voor een bbl-opleiding. Er is ook een voorlichting speciaal voor ouders/verzorgers. Uiteraard is er genoeg ruimte voor het stellen van vragen!
+            </p>
+        </div>          
+        <div class="content">
+            <h2>
+                MAAK KENNIS MET HET KONING WILLEM I COLLEGE
+            </h2>
+            <img src="images/maakkennismet.png" id="maakKennisMet">
+            <p>
+                Kom kennismaken met het Koning Willem I College
+            </p>
+            <p>
+                Geen echte Open Dag? Geen nood, onze online deuren blijven voor jou open. Hoe kun je in deze tijd kennismaken met ons college? Op heel veel verschillende manieren!
+            </p>
+            <p>
+                Op woensdag 2 december is er een online informatieavond. Kun je die avond niet? Dan zijn er nog genoeg andere mogelijkheden: 
+            </p>
+            <p id="bottom">
+                Je leert ons kennen:<br>
+                * Via telefonisch studiekeuzeadvies met een studieadviseur (op afspraak)<br>
+                * Via toffe afdelingsfilmpjes en meer<br>
+                * Via je decaan (opleidingenoverzicht en 'reisgids')<br>
+                * Via de Opleidingeninfolijn (073 62 49 600)<br>
+            </p>
+        </div>
+        <div class="content">
+            <h2>
+                ONDERZOEK NAAR SAMENWERKING KW1C EN DE LEIJGRAAF
+            </h2>
+            <p>
+                Goed onderwijs blijven bieden voor nu en in de toekomst, is voor ons het allerbelangrijkste. We zoeken continu naar manieren om dit te blijven doen en zelfs te verbeteren. Hierin zoeken we ook soms de samenwerking op met andere scholen.
+            </p>
+            <p>
+                Afgelopen periode zijn er verkennende gesprekken gevoerd tussen vertegenwoordigers vanuit zowel het Koning Willem I College als De Leijgraaf over de vraag of een duurzame samenwerking tussen de twee onderwijsinstellingen wenselijk zou zijn. De uitkomst van deze gesprekken was dat we beide positief staan tegenover een onderzoek om de mogelijkheden van een duurzame samenwerking verder te onderzoeken. We zien namelijk allebei veel voordelen in een intensievere samenwerking. Daarom ondertekenden wij vandaag een intentieovereenkomst.<br>
+                <img src="images/tekenmomentkw1cleijgraaf.png" id="tekenmoment">
+            </p>
+            <h3>
+                Startsein onderzoek
+            </h3>
+            <p>
+                Als startsein voor deze onderzoeksfase ondertekenden op vrijdag 13 november ons bestuur en het bestuur van De Leijgraaf een zogenaamde intentieovereenkomst. Met deze officiële overeenkomst laten we zien dat we allebei de intentie hebben om samen te werken. We weten alleen nog niet op wat voor manier en hoe deze samenwerking eruit komt te zien. Beide Raden van Toezicht en ook de Ondernemingsraden en Studentenraden zijn al eerder betrokken en staan achter deze intentie.
+            </p>
+            <h3>
+                De toekomst samen inkleuren
+            </h3>
+            <p>
+                In maart 2021 vindt een eerste evaluatiemoment plaats. Op dat moment kijken we of we het onderzoek voortzetten en op welke manier we dit verder inkleuren. Tijdens het onderzoek verandert er voor niemand iets. We blijven je onderwijs bieden op de vertrouwde manier die je van ons gewend bent. Pas als de resultaten uit het onderzoek bekend zijn, weten we of er een samenwerking komt en wat dit verder gaat betekenen.
+            </p>
+            <h3>
+                Meest gestelde vragen
+            </h3>
+            <h4>
+                Wat is de bedoeling van deze intentieovereenkomst?
+            </h4>
+            <p>
+                Er zijn in de afgelopen tijd gesprekken geweest tussen verschillende medewerkers van De Leijgraaf en het Koning Willem I College. Daarbij is gekeken of er grote verschillen zijn. Bijvoorbeeld hoe we tegen onderwijs aankijken en hoe we zaken aanpakken. Tijdens die gesprekken werd duidelijk dat beide scholen er veel voordelen in zien om meer met elkaar samen te werken.
+            </p>
+            <p>
+                De scholen hebben nu naar elkaar uitgesproken dat ze allebei graag verder willen onderzoeken hoe ze het beste kunnen gaan samenwerken. Het plan om dat te onderzoeken hebben ze vastgelegd in de intentieovereenkomst.
+            </p>
+            <h4>
+                Gaan het Koning Willem I College en De Leijgraaf samenwerken?
+            </h4>
+            <p>
+                Dat is op dit moment nog niet duidelijk. Wat wel duidelijk is, is dat het Koning Willem I College en De Leijgraaf samen een onderzoek starten om te kijken of ze er voordelen uit kunnen halen als ze gaan samenwerken.
+            </p>
+            <h4>
+                Wat houdt het onderzoek in?
+            </h4>
+            <p>
+                De komende maanden gaan de twee scholen met elkaar verder kijken wat de mogelijkheden en effecten zijn van een samenwerking. Zodat ook in de toekomst studenten in de regio Noordoost Brabant kunnen rekenen op goed beroepsonderwijs.
+            </p>
+            <h4>
+                Wanneer is duidelijk of het Koning Willem I College en De Leijgraaf gaan samenwerken?
+            </h4>
+            <p>
+                De komende tijd gaan we onderzoeken of een samenwerking voordelen heeft. Maar we onderzoeken ook welke vorm van samenwerken slim is. Op 1 maart 2021 is er een evaluatiemoment, dan bekijken we of we verdergaan met het onderzoek en hoe we dit gaat doen.
+            </p>
+            <h4>
+                Wat betekent dit nu voor mijn opleiding?
+            </h4>
+            <p>
+                Deze overeenkomst zegt dat we in de komende maanden kijken hoe we gaan samenwerken. Omdat we nog kijken naar hoe we dat het beste kunnen doen, is het te vroeg om te weten wat dit betekent voor onze opleidingen. Beide scholen hebben als doel om studenten nu en in de toekomst goed beroepsonderwijs te bieden, dat goed is afgestemd op de arbeidsmarkt van de regio Noordoost Brabant.
+            </p>
+            <h4>
+                Hoe word ik op de hoogte gehouden?
+            </h4>
+            <p>
+                In de komende periode gaan we jou goed informeren. Dit doen we onder andere door nieuwsberichten te plaatsen op de website, Portaal en de app. Natuurlijk kun je ook altijd met vragen bij je mentor terecht.
+            </p>
+        </div>
+        <div class="content">
+            <h2>
+                CORONAVIRUS - VEELGESTELDE VRAGEN
+            </h2>
+            <p>
+                Lees verder voor de meest actuele informatie over de keuzes van het Koning Willem I College ten aanzien van het coronavirus. 
+            </p>
+            <p>
+                * let op - belangrijke toevoeging FAQ: mondkapjesplicht per 7 oktober 2020 * 
+            </p>
+            <p>
+                Hier vind je de meest recente versie van onze <a href="https://www.kw1c.nl/media/website/documenten/FAQCorona-okt2020.pdf">FAQ rondom corona</a>
+            </p>
+            <p>
+                En hier vind je de <a href="https://www.kw1c.nl/media/website/documenten/200930.KW1C_beslisboom_CORONA_studenten%20DEF.pdf">beslisboom</a>
+            </p>
+            <p>
+                English version: <a href="https://www.kw1c.nl/faq-corona-virus-english-version">see here</a> 
+            </p>
+        </div>
+        <div class="content">
+            <h2>
+                MONDKAPJESPLICHT
+            </h2>
+            <img src="images/mondkap-verplicht.png" id="mondkapjesplicht">
+            <p>
+                Vanaf 7 oktober is het dragen van een mondkapje op het Koning Willem I College verplicht.
+            </p>
+            <p>
+                <span class="bold">Wanneer draag je een mondkapje?</span><br>
+               - Een mondkapje is verplicht wanneer je je verplaatst in de gebouwen. Dit wil zeggen in gangen, hallen, trappen, wc’s, kantines; alle ruimtes waar je op dat moment niet zit, maar loopt <br>   
+                - Een mondkapje is verplicht in praktijkruimtes waarbij het noodzakelijk is om dicht bij elkaar te staan 
+            </p>
+            <p>
+                <span class="bold">Wanneer hoef je geen mondkapje te dragen?</span><br>
+                - Tijdens de les hoeven studenten en leraren geen mondkapje te dragen. Behalve bij praktijklessen waarbij het noodzakelijk is om dicht bij elkaar te komen. <br>
+                - Je hoeft geen mondkapje te dragen als je een zitplaats hebt in de kantine. Als je opstaat en je verplaatst, doe je je mondkapje weer op.
+            </p>
+            <p>
+                <span class="bold">Mondkapjes beschikbaar</span><br>
+                We gaan er van uit dat iedereen een eigen mondkapje meebrengt. Mocht je je mondkapje vergeten zijn, dan kun je een uitwasbaar mondkapje kopen tegen een gereduceerd tarief van € 2,- per stuk bij de winkeltjes op de Vlijmenseweg en de Onderwijsboulevard. 
+            </p>
+            <p>
+                Overige maatregelen blijven gelden<br>
+                Het dragen van een mondkapje zorgt ervoor dat we blijven opletten en elkaar beschermen. Het is geen vervanging van andere maatregelen! Dus ook met een mondkapje op moet je anderhalve meter afstand houden van elkaar. En desinfecteer je regelmatig je handen. Hiermee voorkom je verspreiding van het virus. 
+            </p>
+        </div>   
+        <div class="content">
+            <h2>
+                ROOKVRIJ SCHOOLTERREIN
+            </h2>
+            <p>
+                Per 1 augustus 2020 zijn alle locaties van het Koning Willem I College rookvrij.<br>
+                Wat houdt dat in? Klik <a href="https://www.kw1c.nl/rookvrij-schoolterrein">hier</a>.
+            </p>
+            <img src="images/rookvrij.jpeg" id="rookvrijeSchool">
+        </div>  
+        <div class="content">
+            <h2>
+                ONTDEK HET LAND VAN KONING WILLEM I COLLEGE
+            </h2>
+            <p>
+                Laten we eerlijk zijn, we zijn natuurlijk niet écht een land. Wij zijn een school, gewoon een goede school. Maar, wel eentje die op een eigen manier tegen de wereld aankijkt. Met een eigen cultuur, een eigen plek en een eigen -moderne- manier van lesgeven.<br>
+                Bovendien lopen hier elke dag duizenden mensen rond die hier eten, werken en studeren. Vandaar dat we je welkom heten in een land. Een land zonder grenzen en met onbegrensde mogelijkheden. Een plek waar dingen kunnen en waar altijd iets gebeurt. Wij houden namelijk niet van afwachten. Wij houden van proberen; experimenteren. Leren door dingen te ervaren. Door gewoon vanaf dag één aan de slag te gaan. Daarom hebben we hier een bank, een garage, een restaurant en zelfs een theater. Zo leiden we mensen op die zelf iets kunnen bedenken, en het vervolgens ook zelf kunnen doen. Vakmensen die goed voor zichzelf en voor de wereld om ons heen zorgen.
+                Welkom in een land waar je creatief leert denken, maar toch midden in de realiteit blijft staan. Welkom in het land van Koning Willem I College. 
+                <br><br>
+                <iframe src="https://player.vimeo.com/video/148881394" id="iframeVid"></iframe>
+            </p>
+        </div>   
+        <footer>
+            <!-- Logo invoegen -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/full-logo-kw1c.jpg" alt="logo">
+                </a>
+            </div>
+            <!-- Social media icons --> 
+            <div id="socialMedia">
+                <a href="https://www.youtube.com/user/KoningWillemICollege" title="Youtube" target="_blank">
+                    <i class="demo-icon icon-youtube">&#xf16a;</i>
+                </a> 
+                <a href="https://www.linkedin.com/school/koning-willem-i-college/" title="LinkedIn" target="_blank">
+                    <i class="demo-icon icon-linkedin">&#xf05c;</i>
+                </a>
+                <a href="https://www.instagram.com/kw1c/" title="Instagram" target="_blank">
+                    <i class="demo-icon icon-instagram">&#xf16d;</i>
+                </a>
+                <a href="https://twitter.com/KW1C" title="Twitter" target="_blank">
+                    <i class="demo-icon icon-twitter">&#xf304;</i>
+                </a>
+
+                <a href="https://www.facebook.com/KoningWillemICollege" title="Facebook" target="_blank">
+                    <i class="demo-icon icon-facebook">&#xf308;</i>
+                </a>
+            </div>
+            <div id="copyright">
+                &copy;Pepijn Emmers - Software Developer
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &copy;Martijn Klerks - Logo ontwikkelaar
+            </div>
+        </footer>
+    </body>
+</html>
