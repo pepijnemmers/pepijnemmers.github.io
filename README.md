@@ -2,7 +2,7 @@
 
 ## Portfolio websites
 
-Below are the links to my portfolio websites - designed and build by @pepijnemmers
+Below are the links to my portfolio websites - designed and build by [@pepijnemmers](https://www.github.com/pepijnemmers)
 
 
 ## 🔗 Links
