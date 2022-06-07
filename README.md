@@ -18,4 +18,4 @@ Below are the links to my portfolio websites - designed and build by [@pepijnemm
 
 ## 💡 Feedback
 
-If you have any feedback (on the latest version), please reach out to [this](mailto:info@pepijnemmers.nl?subject=Github_Portfolio_Feedback) emailadres
+If you have any feedback (on the latest version), please reach out to [this](mailto:info@pepijnemmers.nl?subject=Github_Portfolio_Feedback) emailadres, or go to the #Discussions
