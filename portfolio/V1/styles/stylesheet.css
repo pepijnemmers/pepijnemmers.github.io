@@ -95,8 +95,17 @@ header
     width: 100%;
     z-index: 99;
 }
+header::before {
+    content: "Dit is een veroudere website. Niet alle content is correct en/of kan niet geladen worden.";
+    background-color: #1c1c1c;
+    color: #f00;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    padding: 0.5em 0;
+}
 .navbar
-{ 
+{
     display: flex;  /* logo en nav naast elkaar zetten */
     justify-content: space-between; /* ruimte tussen logo en nav geven */
     align-items: center; /* tekst in midden zetten (tussen boven/onder) */ 
@@ -306,6 +315,7 @@ footer .contactButton
 {
     .navbar
     {
+        position: relative;
         flex-direction: column; /* onder elkaar zetten */
         align-items: flex-start; /* aan begin zetten */
         z-index: 999;

@@ -5,10 +5,6 @@
     Javascript portfolio
 */
 
-
-/* *** OLD WEBSITE *** */
-alert("Dit is een oudere website. Niet alle content is correct en/of kan niet geladen worden.");
-
 //laadscherm overslaan
 function skipLoading()
 {
